@@ -5,15 +5,17 @@ public class Brand {
     private String brandName;
     private String website;
     private String description;
+    private int[] shareHolderIds;
 
     public Brand() {
     }
 
-    public Brand(Integer id, String brandName, String website, String description) {
+    public Brand(Integer id, String brandName, String website, String description, int[] shareHolderIds) {
         this.id = id;
         this.brandName = brandName;
         this.website = website;
         this.description = description;
+        this.shareHolderIds = shareHolderIds;
     }
 
     public Integer getId() {
@@ -46,5 +48,13 @@ public class Brand {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int[] getShareHolderIds() {
+        return shareHolderIds;
+    }
+
+    public void setShareHolderIds(int[] shareHolderIds) {
+        this.shareHolderIds = shareHolderIds;
     }
 }
