@@ -1,11 +1,11 @@
 package ir.maktabsharif101.hw7.entities;
 @SuppressWarnings("unused")
 public class User {
-    Integer id;
-    String fullName;
-    String userName;
-    String email;
-    String password;
+    private Integer id;
+    private String fullName;
+    private String userName;
+    private String email;
+    private String password;
 
 
     public User() {

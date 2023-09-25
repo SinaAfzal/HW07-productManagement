@@ -1,9 +1,9 @@
 package ir.maktabsharif101.hw7.entities;
 @SuppressWarnings("unused")
 public class Category {
-    Integer id;
-    String categoryName;
-    String description;
+    private Integer id;
+    private String categoryName;
+    private String description;
 
     public Category() {
     }

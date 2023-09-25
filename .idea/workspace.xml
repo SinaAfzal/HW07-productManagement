@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="Initial config of the project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/entities/User.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create class Category">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/entities/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
-      <workItem from="1695651017915" duration="1837000" />
+      <workItem from="1695651017915" duration="3495000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -60,7 +60,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695651719238</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create class User">
+      <created>1695653034680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695653034680</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create class Category">
+      <created>1695653179759</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695653179759</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,6 +93,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial config of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial config of the project" />
+    <MESSAGE value="create class User" />
+    <MESSAGE value="create class Category" />
+    <option name="LAST_COMMIT_MESSAGE" value="create class Category" />
   </component>
 </project>
