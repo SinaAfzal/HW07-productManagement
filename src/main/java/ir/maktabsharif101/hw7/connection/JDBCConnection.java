@@ -5,15 +5,20 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class JDBCConnection {
-    private final String DATABASE_URL="jdbc:postgresql://localhost:5432/postgres";
-    private final String DATABASE_USER="postgres";
-    private final String DATABASE_PASSWORD="12369874";
-    private Connection connection= DriverManager.getConnection(DATABASE_URL,DATABASE_USER,DATABASE_PASSWORD);
+    private static final String DATABASE_URL="jdbc:postgresql://localhost:5432/postgres";
+    private static final String DATABASE_USER="postgres";
+    private static final String DATABASE_PASSWORD="12369874";
+    private static final Connection connection;
 
-    public JDBCConnection() throws SQLException {
+    static {
+        try {
+            connection = DriverManager.getConnection(DATABASE_URL,DATABASE_USER,DATABASE_PASSWORD);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
         return connection;
     }
 }
