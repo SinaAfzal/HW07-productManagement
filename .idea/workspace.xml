@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create class Category">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create class Product and make fields of Category and User private." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
-      <workItem from="1695651017915" duration="3495000" />
+      <workItem from="1695651017915" duration="3817000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -74,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695653179759</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create class Product and make fields of Category and User private.">
+      <created>1695654855661</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695654855661</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +99,7 @@
     <MESSAGE value="Initial config of the project" />
     <MESSAGE value="create class User" />
     <MESSAGE value="create class Category" />
-    <option name="LAST_COMMIT_MESSAGE" value="create class Category" />
+    <MESSAGE value="create class Product and make fields of Category and User private." />
+    <option name="LAST_COMMIT_MESSAGE" value="create class Product and make fields of Category and User private." />
   </component>
 </project>
