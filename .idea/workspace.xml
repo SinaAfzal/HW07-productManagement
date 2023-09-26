@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add doesExist method to CategoryRepository class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateCategoryName method to CategoryRepository class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
       <workItem from="1695651017915" duration="10605000" />
-      <workItem from="1695704154504" duration="8986000" />
+      <workItem from="1695704154504" duration="9414000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695713964173</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add updateCategoryName method to CategoryRepository class">
+      <created>1695714596070</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1695714596070</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +246,7 @@
     <MESSAGE value="create CategoryRepository class and add its connection" />
     <MESSAGE value="add save method to CategoryRepository class" />
     <MESSAGE value="add doesExist method to CategoryRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doesExist method to CategoryRepository class" />
+    <MESSAGE value="add updateCategoryName method to CategoryRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateCategoryName method to CategoryRepository class" />
   </component>
 </project>
