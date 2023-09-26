@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateBrandId method to ProductRepository class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create ShareHolderRepository class and add its connection">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
       <workItem from="1695651017915" duration="10605000" />
-      <workItem from="1695704154504" duration="16188000" />
+      <workItem from="1695704154504" duration="16558000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -303,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695725085788</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="create ShareHolderRepository class and add its connection">
+      <created>1695725854249</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1695725854249</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +326,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create UserRepository class" />
     <MESSAGE value="create ApplicationContext class and make JDBCConnection fields static final" />
     <MESSAGE value="create UserRepository class and add it to ApplicationContext class" />
     <MESSAGE value="create tables using SQL.sql" />
@@ -346,6 +350,7 @@
     <MESSAGE value="add updateProductName method to ProductRepository class" />
     <MESSAGE value="add updateCategoryId method to ProductRepository class" />
     <MESSAGE value="add updateBrandId method to ProductRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updateBrandId method to ProductRepository class" />
+    <MESSAGE value="create ShareHolderRepository class and add its connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="create ShareHolderRepository class and add its connection" />
   </component>
 </project>
