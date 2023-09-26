@@ -35,8 +35,7 @@ public class ShareHolderRepository {
         PreparedStatement preparedStatement=connection.prepareStatement(query);
         preparedStatement.setString(1,newShareHolderName);
         preparedStatement.setInt(2,id);
-        int result=preparedStatement.executeUpdate();
-        return result;
+        return preparedStatement.executeUpdate();
     }
 
     public int updatePhoneNumber(String newPhoneNumber, int id) throws SQLException {
@@ -44,8 +43,15 @@ public class ShareHolderRepository {
         PreparedStatement preparedStatement=connection.prepareStatement(query);
         preparedStatement.setString(1,newPhoneNumber);
         preparedStatement.setInt(2,id);
-        int result=preparedStatement.executeUpdate();
-        return result;
+        return preparedStatement.executeUpdate();
+    }
+
+    public int updateNationalCode(String newNationalCode,int id) throws SQLException{
+        String query="UPDATE shareholder SET nationalcode=? WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1,newNationalCode);
+        preparedStatement.setInt(2,id);
+        return preparedStatement.executeUpdate();
     }
 
 }
