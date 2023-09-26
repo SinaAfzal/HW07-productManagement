@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add doesExist method to ProductRepository class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateProductName method to ProductRepository class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
     </list>
@@ -68,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
       <workItem from="1695651017915" duration="10605000" />
-      <workItem from="1695704154504" duration="15004000" />
+      <workItem from="1695704154504" duration="15318000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -280,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695724289131</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add updateProductName method to ProductRepository class">
+      <created>1695724675389</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1695724675389</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +305,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create class ShareHolder" />
     <MESSAGE value="add shareholder relation to class Brand" />
     <MESSAGE value="create JDBCConnection class" />
     <MESSAGE value="create UserRepository class" />
@@ -323,6 +329,7 @@
     <MESSAGE value="create ProductRepository class and add its connection" />
     <MESSAGE value="add save method to ProductRepository class" />
     <MESSAGE value="add doesExist method to ProductRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doesExist method to ProductRepository class" />
+    <MESSAGE value="add updateProductName method to ProductRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateProductName method to ProductRepository class" />
   </component>
 </project>
