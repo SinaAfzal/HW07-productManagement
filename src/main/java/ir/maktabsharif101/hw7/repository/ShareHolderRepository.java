@@ -22,4 +22,12 @@ public class ShareHolderRepository {
         return shareHolder;
     }
 
+    public boolean doesExist(ShareHolder shareHolder) throws SQLException{
+        String query="SELECT nationalcode FROM shareholder WHERE nationalcode=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1,shareHolder.getNationalCode());
+        ResultSet resultSet=preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+
 }
