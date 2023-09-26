@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="minor bug fix in updateBrandName method of BrandRepository class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateBrandDescription to BrandRepository class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
       <workItem from="1695651017915" duration="10605000" />
-      <workItem from="1695704154504" duration="11191000" />
+      <workItem from="1695704154504" duration="11688000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -252,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695716423045</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add updateBrandDescription to BrandRepository class">
+      <created>1695716584953</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1695716584953</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +278,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create class User" />
     <MESSAGE value="create class Category" />
     <MESSAGE value="create class Product and make fields of Category and User private." />
     <MESSAGE value="create class Brand" />
@@ -295,6 +302,7 @@
     <MESSAGE value="add doesExist method to BrandRepository class" />
     <MESSAGE value="add updateBrandName method to BrandRepository class" />
     <MESSAGE value="minor bug fix in updateBrandName method of BrandRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor bug fix in updateBrandName method of BrandRepository class" />
+    <MESSAGE value="add updateBrandDescription to BrandRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateBrandDescription to BrandRepository class" />
   </component>
 </project>
