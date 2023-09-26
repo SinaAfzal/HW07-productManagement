@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create ApplicationContext class and make JDBCConnection fields static final">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create UserRepository class and add it to ApplicationContext class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +46,20 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "afa740a8-79a2-4c05-a867-32ebc6613b65/database/\"postgres\"/schema/\"hw7\""
     ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="SQL.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="afa740a8-79a2-4c05-a867-32ebc6613b65" namespace="database/&quot;postgres&quot;/schema/&quot;hw7&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +68,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
-      <workItem from="1695651017915" duration="8160000" />
+      <workItem from="1695651017915" duration="10605000" />
+      <workItem from="1695704154504" duration="1883000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -128,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695660465435</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="create UserRepository class and add it to ApplicationContext class">
+      <created>1695660903803</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695660903803</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +176,7 @@
     <MESSAGE value="create JDBCConnection class" />
     <MESSAGE value="create UserRepository class" />
     <MESSAGE value="create ApplicationContext class and make JDBCConnection fields static final" />
-    <option name="LAST_COMMIT_MESSAGE" value="create ApplicationContext class and make JDBCConnection fields static final" />
+    <MESSAGE value="create UserRepository class and add it to ApplicationContext class" />
+    <option name="LAST_COMMIT_MESSAGE" value="create UserRepository class and add it to ApplicationContext class" />
   </component>
 </project>
