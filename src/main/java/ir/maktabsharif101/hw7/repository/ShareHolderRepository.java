@@ -39,4 +39,13 @@ public class ShareHolderRepository {
         return result;
     }
 
+    public int updatePhoneNumber(String newPhoneNumber, int id) throws SQLException {
+        String query="UPDATE shareholder SET phonenumber=? WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1,newPhoneNumber);
+        preparedStatement.setInt(2,id);
+        int result=preparedStatement.executeUpdate();
+        return result;
+    }
+
 }
