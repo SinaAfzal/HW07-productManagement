@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create BrandRepository class and add its connection">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add save method to BrandRepository class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
     </list>
@@ -68,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
       <workItem from="1695651017915" duration="10605000" />
-      <workItem from="1695704154504" duration="10161000" />
+      <workItem from="1695704154504" duration="10634000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695715084536</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add save method to BrandRepository class">
+      <created>1695715553774</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1695715553774</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +271,7 @@
     <MESSAGE value="add updateCategoryName method to CategoryRepository class" />
     <MESSAGE value="add updateCategoryDescription method to CategoryRepository class" />
     <MESSAGE value="create BrandRepository class and add its connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="create BrandRepository class and add its connection" />
+    <MESSAGE value="add save method to BrandRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add save method to BrandRepository class" />
   </component>
 </project>

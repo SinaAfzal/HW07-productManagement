@@ -23,4 +23,12 @@ public class BrandRepository {
         brand.setId(resultSet.getInt(1));
         return brand;
     }
+
+    public boolean doesExist(Brand brand) throws SQLException {
+        String query="SELECT brandname FROM brand WHERE brandname=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1,brand.getBrandName());
+        ResultSet resultSet=preparedStatement.executeQuery();
+        return resultSet.next();
+    }
 }
