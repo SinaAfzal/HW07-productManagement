@@ -34,5 +34,24 @@ public class UserRepository {
         return resultSet.next();
     }
 
+    public User login(String username, String password) throws SQLException{
+        String query="SELECT * FROM users WHERE username=? AND password=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1,username);
+        preparedStatement.setString(2,password);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        if (resultSet.next()){
+            User user=new User();
+            user.setId(resultSet.getInt(1));
+            user.setFullName(resultSet.getString(2));
+            user.setUserName(resultSet.getString(3));
+            user.setEmail(resultSet.getString(4));
+            user.setPassword(resultSet.getString(5));
+
+            return user;
+        }
+        return null;
+    }
+
 
 }
