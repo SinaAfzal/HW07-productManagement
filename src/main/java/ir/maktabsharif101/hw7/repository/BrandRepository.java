@@ -36,7 +36,7 @@ public class BrandRepository {
         String query="UPDATE brand SET brandname=? WHERE id=?";
         PreparedStatement preparedStatement=connection.prepareStatement(query);
         preparedStatement.setString(1,newBrandName);
-        preparedStatement.setInt(2.id);
+        preparedStatement.setInt(2,id);
         int result=preparedStatement.executeUpdate();
         return result;
     }
