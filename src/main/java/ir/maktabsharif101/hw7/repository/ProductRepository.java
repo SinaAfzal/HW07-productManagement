@@ -40,4 +40,13 @@ public class ProductRepository {
         return result;
     }
 
+    public int updateCategoryId(int newCategoryId, int id) throws SQLException{
+        String query="UPDATE product SET categoryid=? WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setInt(1,newCategoryId);
+        preparedStatement.setInt(2,id);
+        int result=preparedStatement.executeUpdate();
+        return result;
+    }
+
 }
