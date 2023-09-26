@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add save method to ShareHolderRepository class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add doesExist method to ShareHolderRepository class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" afterDir="false" />
     </list>
@@ -38,6 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Sina/IdeaProjects/Sina_Afzalsoltani_HW07_Maktab101",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -68,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1695651011880</updated>
       <workItem from="1695651017915" duration="10605000" />
-      <workItem from="1695704154504" duration="17074000" />
+      <workItem from="1695704154504" duration="17118000" />
+      <workItem from="1695735450600" duration="675000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -315,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695726177334</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add doesExist method to ShareHolderRepository class">
+      <created>1695726690213</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1695726690213</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +343,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create UserRepository class and add it to ApplicationContext class" />
     <MESSAGE value="create tables using SQL.sql" />
     <MESSAGE value="add save method to UserRepository class" />
     <MESSAGE value="add doesExist method to UserRepository class" />
@@ -358,6 +367,7 @@
     <MESSAGE value="add updateBrandId method to ProductRepository class" />
     <MESSAGE value="create ShareHolderRepository class and add its connection" />
     <MESSAGE value="add save method to ShareHolderRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add save method to ShareHolderRepository class" />
+    <MESSAGE value="add doesExist method to ShareHolderRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add doesExist method to ShareHolderRepository class" />
   </component>
 </project>

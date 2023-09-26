@@ -30,4 +30,13 @@ public class ShareHolderRepository {
         return resultSet.next();
     }
 
+    public int updateShareHolderName(String newShareHolderName,int id) throws SQLException{
+        String query="UPDATE shareholder SET shareholdername=? WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1,newShareHolderName);
+        preparedStatement.setInt(2,id);
+        int result=preparedStatement.executeUpdate();
+        return result;
+    }
+
 }
