@@ -25,5 +25,14 @@ public class UserRepository {
         return user;
     }
 
+    public boolean doesExist(User user) throws SQLException {
+        String query="SELECT username FROM users WHERE username=? OR email ILIKE ?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1, user.getUserName());
+        preparedStatement.setString(2,user.getEmail());
+        ResultSet resultSet=preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+
 
 }
