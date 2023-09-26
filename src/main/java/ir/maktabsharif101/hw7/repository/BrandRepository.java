@@ -40,4 +40,14 @@ public class BrandRepository {
         int result=preparedStatement.executeUpdate();
         return result;
     }
+
+    public int updateBrandDescription(String newBrandDescription,int id) throws SQLException{
+        String query="UPDATE brand SET description=? WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setString(1,newBrandDescription);
+        preparedStatement.setInt(2,id);
+        int result=preparedStatement.executeUpdate();
+        return result;
+    }
+
 }
