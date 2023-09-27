@@ -39,5 +39,19 @@ public class UserService {
         }
     }
 
+    public int updateFullName(String newFullName, int id) throws SQLException {
+        if (userRepository.doesExist(id)) {
+            int serverEcho = userRepository.updateFullName(newFullName, id);
+            if (serverEcho > 0)
+                System.out.println("Your full name was changed successfully!");
+            else
+                System.out.println("OOPS! Something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println("Invalid user id!");
+            return -1;
+        }
+    }
+
 
 }
