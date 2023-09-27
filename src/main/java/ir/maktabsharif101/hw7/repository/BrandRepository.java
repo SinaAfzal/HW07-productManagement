@@ -96,4 +96,12 @@ public class BrandRepository {
         return brand;
     }
 
+    public int countAllBrands() throws SQLException {
+        String query="SELECT count(*) FROM brand";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
 }
