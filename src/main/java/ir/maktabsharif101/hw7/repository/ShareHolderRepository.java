@@ -100,6 +100,14 @@ public class ShareHolderRepository {
         preparedStatement.setInt(2, shareholderId);
         return preparedStatement.executeUpdate();
     }
+
+    public void sellBrandShares(int shareholderId, int brandId) throws SQLException{
+        String query="DELETE FROM shareholder_brand WHERE (shareholderid=? AND brandid=?)";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setInt(1,shareholderId);
+        preparedStatement.setInt(2,brandId);
+        preparedStatement.executeUpdate();
+    }
     public int countAllShareHolders() throws SQLException {
         String query="SELECT count(*) FROM shareholder";
         PreparedStatement preparedStatement=connection.prepareStatement(query);
