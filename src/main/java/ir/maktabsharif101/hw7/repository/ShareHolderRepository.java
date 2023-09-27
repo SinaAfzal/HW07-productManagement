@@ -100,6 +100,15 @@ public class ShareHolderRepository {
         return shareHolder;
     }
 
+    public boolean doesOwn(int shareHolderID, int brandID) throws SQLException {
+        String query="SELECT shareholderid FROM shareholder_brand WHERE (shareholderid=? AND brandid=?)";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setInt(1,shareHolderID);
+        preparedStatement.setInt(2,brandID);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+
     public int buyBrandShares(int shareholderId, int brandId) throws SQLException {
         String query = "INSERT INTO shareholder_brand (brandid, shareholderid) VALUES (?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
