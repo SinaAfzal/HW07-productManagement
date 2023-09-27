@@ -27,38 +27,49 @@ public class CategoryRepository {
         String query = "SELECT categoryname FROM category WHERE categoryname=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, category.getCategoryName());
-        ResultSet resultSet=preparedStatement.executeQuery();
+        ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet.next();
     }
 
-    public int updateCategoryName(String newCategoryName,int id) throws SQLException {
-        String query="UPDATE category SET categoryname=? WHERE id=?";
-        PreparedStatement preparedStatement=connection.prepareStatement(query);
-        preparedStatement.setString(1,newCategoryName);
-        preparedStatement.setInt(2,id);
-        int result=preparedStatement.executeUpdate();
+    public int updateCategoryName(String newCategoryName, int id) throws SQLException {
+        String query = "UPDATE category SET categoryname=? WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setString(1, newCategoryName);
+        preparedStatement.setInt(2, id);
+        int result = preparedStatement.executeUpdate();
         return result;
     }
 
-    public int updateCategoryDescription(String newCategoryDescription,int id) throws SQLException{
-        String query="UPDATE category SET description=? WHERE id=?";
-        PreparedStatement preparedStatement=connection.prepareStatement(query);
-        preparedStatement.setString(1,newCategoryDescription);
-        preparedStatement.setInt(2,id);
-        int result=preparedStatement.executeUpdate();
+    public int updateCategoryDescription(String newCategoryDescription, int id) throws SQLException {
+        String query = "UPDATE category SET description=? WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setString(1, newCategoryDescription);
+        preparedStatement.setInt(2, id);
+        int result = preparedStatement.executeUpdate();
         return result;
     }
 
     public int countAllCategories() throws SQLException {
-        String query="SELECT count(*) FROM category";
-        PreparedStatement preparedStatement=connection.prepareStatement(query);
-        ResultSet resultSet=preparedStatement.executeQuery();
+        String query = "SELECT COUNT(*) FROM category";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ResultSet resultSet = preparedStatement.executeQuery();
         resultSet.next();
         return resultSet.getInt(1);
     }
 
-
-
+    public Category load(int id) throws SQLException {
+        String query = "SELECT * FROM category WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        Category category = new Category();
+        while (resultSet.next()) {
+            category.setId(id);
+            category.setCategoryName(resultSet.getString(2));
+            category.setDescription(resultSet.getString(3));
+        }
+        return category;
+    }
 
 
 }
