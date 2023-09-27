@@ -35,4 +35,7 @@ public class ApplicationContext {
         USER_SERVICE=new UserService(USER_REPOSITORY);
         MENU=new Menu(BRAND_SERVICE,CATEGORY_SERVICE,PRODUCT_SERVICE,USER_SERVICE,SHARE_HOLDER_SERVICE);
     }
+    public static Menu getMenu(){
+        return MENU;
+    }
 }
