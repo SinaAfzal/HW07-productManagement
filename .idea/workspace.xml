@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateFullName method to UserService class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create Menu class and add its connections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,14 +75,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="624000" />
-    </task>
-    <task id="LOCAL-00054" summary="add countAllProducts method to ProductRepository class">
-      <created>1695802395157</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1695802395157</updated>
+      <workItem from="1695832469880" duration="2933000" />
     </task>
     <task id="LOCAL-00055" summary="add load method to ProductRepository class">
       <created>1695802453604</created>
@@ -420,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695827643267</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="create Menu class and add its connections">
+      <created>1695833118509</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1695833118510</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add updateProductName method to ProductService class" />
     <MESSAGE value="Add updateProductBrand method to ProductService class" />
     <MESSAGE value="Add updateProductCategory method to ProductService class" />
     <MESSAGE value="Add delete method to ProductRepository class" />
@@ -463,6 +462,7 @@
     <MESSAGE value="add save method to UserService class" />
     <MESSAGE value="add login method to UserService class" />
     <MESSAGE value="add updateFullName method to UserService class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updateFullName method to UserService class" />
+    <MESSAGE value="create Menu class and add its connections" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Menu class and add its connections" />
   </component>
 </project>
