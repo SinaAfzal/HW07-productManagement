@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add countAllProducts method to ProductRepository class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create BrandService class and add its connections">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,21 +72,8 @@
       <workItem from="1695704154504" duration="17118000" />
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
-      <workItem from="1695791992794" duration="10949000" />
-    </task>
-    <task id="LOCAL-00008" summary="create JDBCConnection class">
-      <created>1695658752051</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1695658752051</updated>
-    </task>
-    <task id="LOCAL-00009" summary="create UserRepository class">
-      <created>1695660118205</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1695660118205</updated>
+      <workItem from="1695791992794" duration="11516000" />
+      <workItem from="1695811481322" duration="781000" />
     </task>
     <task id="LOCAL-00010" summary="create ApplicationContext class and make JDBCConnection fields static final">
       <created>1695660465435</created>
@@ -417,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695802491401</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="add listAllProducts method to ProductRepository class">
+      <created>1695802999149</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1695802999149</updated>
+    </task>
+    <task id="LOCAL-00058" summary="create BrandService class and add its connections">
+      <created>1695803175847</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1695803175847</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updateProductName method to ProductRepository class" />
-    <MESSAGE value="add updateCategoryId method to ProductRepository class" />
     <MESSAGE value="add updateBrandId method to ProductRepository class" />
     <MESSAGE value="create ShareHolderRepository class and add its connection" />
     <MESSAGE value="add save method to ShareHolderRepository class" />
@@ -460,6 +459,8 @@
     <MESSAGE value="add load method to ProductRepository class" />
     <MESSAGE value="add load method to ProductRepository class" />
     <MESSAGE value="add countAllProducts method to ProductRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add countAllProducts method to ProductRepository class" />
+    <MESSAGE value="add listAllProducts method to ProductRepository class" />
+    <MESSAGE value="create BrandService class and add its connections" />
+    <option name="LAST_COMMIT_MESSAGE" value="create BrandService class and add its connections" />
   </component>
 </project>
