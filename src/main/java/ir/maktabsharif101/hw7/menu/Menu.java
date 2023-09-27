@@ -258,7 +258,10 @@ public class Menu {
 
         categoryService.load(id);
     }
-    public void listAllCategories(){}
+    public void listAllCategories() throws SQLException {
+        System.out.println();
+        categoryService.listAllCategories();
+    }
     public void deleteCategory(){}
 
     public void brandMenu(){
