@@ -6,12 +6,12 @@ public class ShareHolder {
     private String phoneNumber;
     private String nationalCode;
 
-    private int[] brandIds;
+    private Integer[] brandIds;
 
     public ShareHolder() {
     }
 
-    public ShareHolder(Integer id, String shareHolderName, String phoneNumber, String nationalCode, int[] brandIds) {
+    public ShareHolder(Integer id, String shareHolderName, String phoneNumber, String nationalCode, Integer[] brandIds) {
         this.id = id;
         this.shareHolderName = shareHolderName;
         this.phoneNumber = phoneNumber;
@@ -51,11 +51,11 @@ public class ShareHolder {
         this.nationalCode = nationalCode;
     }
 
-    public int[] getBrandIds() {
+    public Integer[] getBrandIds() {
         return brandIds;
     }
 
-    public void setBrandIds(int[] brandIds) {
+    public void setBrandIds(Integer[] brandIds) {
         this.brandIds = brandIds;
     }
 }

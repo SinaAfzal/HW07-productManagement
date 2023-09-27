@@ -90,7 +90,7 @@ public class ShareHolderRepository {
             PreparedStatement preparedStatementRelatedBrandFinder = connection.prepareStatement(relatedBrandFinderQuery);
             preparedStatementRelatedBrandFinder.setInt(1, id);
             ResultSet resultSetFoundRelatedBrands = preparedStatementRelatedBrandFinder.executeQuery();
-            int[] brandIDs = new int[numberOfFoundBrands];
+            Integer[] brandIDs = new Integer[numberOfFoundBrands];
             int counter = 0;
             while (resultSetFoundRelatedBrands.next()) {
                 brandIDs[counter++] = resultSet.getInt("brandid");
