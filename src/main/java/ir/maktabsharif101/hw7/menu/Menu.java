@@ -149,7 +149,38 @@ public class Menu {
     }
 
     public void userMenu() {
+        boolean userMenuIsActive=true;
+        while (userMenuIsActive){
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|                HomeWork7-Maktab101               |");
+            System.out.println("|      Product/Brand/Category Management system    |");
+            System.out.println("|           Developed by: Sina Afzalsoltani        |");
+            System.out.println("|                     USER MENU                    |");
+            System.out.println("+--------------------------------------------------+");
+            System.out.println();
+            System.out.println();
+            System.out.println("Choose an option from the menu:");
+            System.out.println("1- Update full name");
+            System.out.println("2- exit");
+
+            String input = scanner.next();
+
+            switch (input) {
+                case "1" -> updateUserFullName();
+                case "2" -> userMenuIsActive = false;
+                default -> {
+                    System.out.println("Invalid input!");
+                    scanner.next();
+                    System.out.println("**********  Press any key to continue   **********");
+                }
+            }
+        }
     }
+
+    public void updateUserFullName(){
+
+    }
+
     public void categoryMenu(){
     }
     public void brandMenu(){
