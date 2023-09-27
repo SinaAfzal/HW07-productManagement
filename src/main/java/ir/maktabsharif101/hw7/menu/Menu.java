@@ -351,7 +351,14 @@ public class Menu {
         brandService.updateBrandName(newBrandName, oldBrandName);
     }
 
-    public void updateBrandDescription() {
+    public void updateBrandDescription() throws SQLException {
+        System.out.print("Brand ID: ");
+        int id = scanner.nextInt();
+
+        System.out.println("New Brand description: ");
+        String newDescription = scanner.nextLine();
+
+        brandService.updateBrandDescription(newDescription, id);
     }
 
     public void loadBrand() {

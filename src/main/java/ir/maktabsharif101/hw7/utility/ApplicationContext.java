@@ -6,7 +6,6 @@ import ir.maktabsharif101.hw7.repository.*;
 import ir.maktabsharif101.hw7.service.*;
 
 import java.sql.Connection;
-import java.util.Scanner;
 
 public class ApplicationContext {
     private static final Connection CONNECTION;
