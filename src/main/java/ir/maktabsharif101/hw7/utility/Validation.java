@@ -17,6 +17,13 @@ public class Validation {
         return matcher.matches();
     }
 
+    public static boolean isWebsiteValid(String website){
+        Pattern pattern=Pattern.compile("[Ww][Ww][Ww]\\.[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+        Matcher matcher=pattern.matcher(website);
+        return matcher.matches();
+    }
+
+
 
 
 }
