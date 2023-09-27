@@ -58,7 +58,20 @@ public class ProductService {
             System.out.println("Invalid product id!");
             return -1;
         }
+    }
 
+    public int updateProductCategory(int productID,int newCategoryID) throws SQLException {
+        if (productRepository.doesExist(productID)){
+            int serverEcho=productRepository.updateCategoryId(newCategoryID,productID);
+            if (serverEcho>0)
+                System.out.println("Product category was changed successfully!");
+            else
+                System.out.println("OOPS! Something went wrong!");
+            return serverEcho;
+        }else {
+            System.out.println("Invalid product id!");
+            return -1;
+        }
     }
 
 
