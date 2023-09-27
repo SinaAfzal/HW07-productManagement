@@ -102,4 +102,13 @@ public class BrandService {
         }
         return brands;
     }
+
+    public void delete(int id) throws SQLException {
+        if (brandRepository.doesExist(id)) {
+            brandRepository.delete(id);
+            System.out.println("Brand was deleted!");
+        } else {
+            System.out.println("Invalid brand ID!");
+        }
+    }
 }
