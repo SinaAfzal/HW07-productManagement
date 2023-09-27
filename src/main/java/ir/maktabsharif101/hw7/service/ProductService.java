@@ -1,6 +1,5 @@
 package ir.maktabsharif101.hw7.service;
 
-import ir.maktabsharif101.hw7.entities.Category;
 import ir.maktabsharif101.hw7.entities.Product;
 import ir.maktabsharif101.hw7.repository.ProductRepository;
 
@@ -92,6 +91,24 @@ public class ProductService {
             System.out.println("Invalid category id!");
             return null;
         }
+    }
+
+    public Product[] listAllProducts() throws SQLException {
+        Product[] products = productRepository.listAllProducts();
+        if (products.length > 0) {
+            System.out.println("# List of available products on database: ");
+            System.out.println("----------------------------");
+            System.out.println("     ID    |   Product name");
+            System.out.println("----------------------------");
+
+            for (int i = 0; i < products.length; i++) {
+                System.out.println("|     " + products[i].getId() + "    " + "    " + products[i].getProductName());
+            }
+            System.out.println("----------------------------");
+        } else {
+            System.out.println("No products available!");
+        }
+        return products;
     }
 
 

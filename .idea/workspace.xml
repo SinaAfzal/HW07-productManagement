@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="Add updateProductCategory method to ProductService class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="Add load method to ProductService class">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,21 +72,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="10435000" />
-    </task>
-    <task id="LOCAL-00032" summary="add updateCategoryId method to ProductRepository class">
-      <created>1695724931812</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1695724931812</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add updateBrandId method to ProductRepository class">
-      <created>1695725085788</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1695725085788</updated>
+      <workItem from="1695811481322" duration="10825000" />
     </task>
     <task id="LOCAL-00034" summary="create ShareHolderRepository class and add its connection">
       <created>1695725854249</created>
@@ -417,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695821628525</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Add delete method to ProductRepository class">
+      <created>1695822047054</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1695822047054</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Add load method to ProductService class">
+      <created>1695822293150</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1695822293150</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add countAllProducts method to ProductRepository class" />
-    <MESSAGE value="add listAllProducts method to ProductRepository class" />
     <MESSAGE value="create BrandService class and add its connections" />
     <MESSAGE value="add save method to BrandService class" />
     <MESSAGE value="overload doesExist method in BrandRepository and slight modification of the related methods in BrandRepository and BrandService" />
@@ -460,6 +458,8 @@
     <MESSAGE value="Add updateProductName method to ProductService class" />
     <MESSAGE value="Add updateProductBrand method to ProductService class" />
     <MESSAGE value="Add updateProductCategory method to ProductService class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add updateProductCategory method to ProductService class" />
+    <MESSAGE value="Add delete method to ProductRepository class" />
+    <MESSAGE value="Add load method to ProductService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add load method to ProductService class" />
   </component>
 </project>
