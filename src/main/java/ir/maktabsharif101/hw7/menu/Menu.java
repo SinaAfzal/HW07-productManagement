@@ -368,7 +368,9 @@ public class Menu {
         brandService.load(id);
     }
 
-    public void listAllBrands() {
+    public void listAllBrands() throws SQLException {
+        System.out.println();
+        brandService.listAllBrands();
     }
 
     public void deleteBrand() {
