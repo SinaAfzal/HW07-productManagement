@@ -1,9 +1,6 @@
 package ir.maktabsharif101.hw7.menu;
 
-import ir.maktabsharif101.hw7.entities.Brand;
-import ir.maktabsharif101.hw7.entities.Category;
-import ir.maktabsharif101.hw7.entities.ShareHolder;
-import ir.maktabsharif101.hw7.entities.User;
+import ir.maktabsharif101.hw7.entities.*;
 import ir.maktabsharif101.hw7.service.*;
 import ir.maktabsharif101.hw7.utility.Validation;
 
@@ -564,7 +561,23 @@ public class Menu {
         }
     }
 
-    public void createProduct(){}
+    public void createProduct() throws SQLException {
+        System.out.print("Product's name: ");
+        String productName=scanner.nextLine();
+
+        System.out.println("*** Select a category id for the product from the list below ***");
+        categoryService.listAllCategories();
+        System.out.print("Enter category ID: ");
+        int categoryId=scanner.nextInt();
+
+        System.out.println("*** Select a brand id for the product from the list below ***");
+        brandService.listAllBrands();
+        System.out.print("Enter brand ID: ");
+        int brandId=scanner.nextInt();
+
+        Product product=new Product(null,productName,categoryId,brandId);
+        productService.save(product);
+    }
     public void updateProductName(){}
     public void updateProductBrand(){}
     public void updateProductCategory(){}
