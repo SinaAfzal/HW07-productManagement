@@ -14,6 +14,7 @@ public class Menu {
     private final ProductService productService;
     private final ShareHolderService shareHolderService;
     private final UserService userService;
+    private User user;
 
     public Menu(BrandService brandService,
                 CategoryService categoryService,
@@ -104,7 +105,7 @@ public class Menu {
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
-        User user = userService.login(userName, password);
+        user = userService.login(userName, password);
 
         if (user != null) {
             mainMenu();
@@ -148,7 +149,7 @@ public class Menu {
         }
     }
 
-    public void userMenu() {
+    public void userMenu() throws SQLException {
         boolean userMenuIsActive=true;
         while (userMenuIsActive){
             System.out.println("+--------------------------------------------------+");
@@ -177,8 +178,10 @@ public class Menu {
         }
     }
 
-    public void updateUserFullName(){
-
+    public void updateUserFullName() throws SQLException {
+        System.out.print("Enter your new full name: ");
+        String newFullName=scanner.nextLine();
+        userService.updateFullName(newFullName,user.getId());
     }
 
     public void categoryMenu(){
