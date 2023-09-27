@@ -1,6 +1,7 @@
 package ir.maktabsharif101.hw7.utility;
 
 import ir.maktabsharif101.hw7.connection.JDBCConnection;
+import ir.maktabsharif101.hw7.menu.Menu;
 import ir.maktabsharif101.hw7.repository.*;
 import ir.maktabsharif101.hw7.service.*;
 
@@ -18,6 +19,7 @@ public class ApplicationContext {
     private static final ProductService PRODUCT_SERVICE;
     private static final ShareHolderService SHARE_HOLDER_SERVICE;
     private static final UserService USER_SERVICE;
+    private static final Menu MENU;
     static{
         CONNECTION= JDBCConnection.getConnection();
         USER_REPOSITORY=new UserRepository(CONNECTION);
@@ -31,5 +33,6 @@ public class ApplicationContext {
         PRODUCT_SERVICE=new ProductService(PRODUCT_REPOSITORY, CATEGORY_SERVICE, BRAND_SERVICE);
         SHARE_HOLDER_SERVICE=new ShareHolderService(SHARE_HOLDER_REPOSITORY);
         USER_SERVICE=new UserService(USER_REPOSITORY);
+        MENU=new Menu(BRAND_SERVICE,CATEGORY_SERVICE,PRODUCT_SERVICE,USER_SERVICE,SHARE_HOLDER_SERVICE);
     }
 }

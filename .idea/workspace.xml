@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add save method to UserService class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/UserService.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateFullName method to UserService class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,21 +74,8 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="15894000" />
-    </task>
-    <task id="LOCAL-00052" summary="add delete method to CategoryRepository class">
-      <created>1695801463275</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1695801463275</updated>
-    </task>
-    <task id="LOCAL-00053" summary="add load method to BrandRepository class">
-      <created>1695802267832</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1695802267832</updated>
+      <workItem from="1695811481322" duration="16056000" />
+      <workItem from="1695832469880" duration="624000" />
     </task>
     <task id="LOCAL-00054" summary="add countAllProducts method to ProductRepository class">
       <created>1695802395157</created>
@@ -417,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695827263959</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="add login method to UserService class">
+      <created>1695827502805</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1695827502805</updated>
+    </task>
+    <task id="LOCAL-00102" summary="add updateFullName method to UserService class">
+      <created>1695827643267</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1695827643267</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modify doesExist method in ProductRepository class" />
-    <MESSAGE value="Add save method to ProductService class" />
     <MESSAGE value="Add updateProductName method to ProductService class" />
     <MESSAGE value="Add updateProductBrand method to ProductService class" />
     <MESSAGE value="Add updateProductCategory method to ProductService class" />
@@ -460,6 +461,8 @@
     <MESSAGE value="create UserService class and add its connection" />
     <MESSAGE value="modify doesExist method in UserRepository class" />
     <MESSAGE value="add save method to UserService class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add save method to UserService class" />
+    <MESSAGE value="add login method to UserService class" />
+    <MESSAGE value="add updateFullName method to UserService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateFullName method to UserService class" />
   </component>
 </project>
