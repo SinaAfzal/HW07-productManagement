@@ -620,7 +620,9 @@ public class Menu {
         productService.load(id);
     }
 
-    public void listAllProducts() {
+    public void listAllProducts() throws SQLException {
+        System.out.println();
+        productService.listAllProducts();
     }
 
     public void deleteProduct() {
