@@ -2,11 +2,11 @@ package ir.maktabsharif101.hw7.menu;
 
 import ir.maktabsharif101.hw7.entities.Brand;
 import ir.maktabsharif101.hw7.entities.Category;
+import ir.maktabsharif101.hw7.entities.ShareHolder;
 import ir.maktabsharif101.hw7.entities.User;
 import ir.maktabsharif101.hw7.service.*;
 import ir.maktabsharif101.hw7.utility.Validation;
 
-import javax.sound.midi.SysexMessage;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -381,7 +381,7 @@ public class Menu {
     }
 
 
-    public void shareholderMenu() {
+    public void shareholderMenu() throws SQLException {
         boolean shareholderMenuIsActive=true;
         while (shareholderMenuIsActive){
             System.out.println("+--------------------------------------------------+");
@@ -423,7 +423,37 @@ public class Menu {
         }
     }
 
-    public void createShareHolder(){}
+    public void createShareHolder() throws SQLException {
+        System.out.println("Shareholder name: ");
+        String shareHolderName = scanner.nextLine();
+
+        System.out.println("Shareholder's phone number: ");
+        String phoneNumber = null;
+        boolean invalidPhoneNumber = true;
+        while (invalidPhoneNumber) {
+            phoneNumber = scanner.nextLine();
+            if (Validation.isPhoneNumberValid(phoneNumber)) {
+                invalidPhoneNumber = false;
+            } else {
+                System.out.println("Enter a valid phone number!");
+            }
+        }
+
+        System.out.println("Shareholder's national code: ");
+        String shareHolderNationalCode = null;
+        boolean invalidNationalCode = true;
+        while (invalidNationalCode) {
+            shareHolderNationalCode = scanner.nextLine();
+            if (Validation.isNationalCodeValid(shareHolderNationalCode)) {
+                invalidNationalCode = false;
+            } else {
+                System.out.println("Enter a valid national code!");
+            }
+        }
+
+        ShareHolder shareHolder = new ShareHolder(null, shareHolderName, phoneNumber, shareHolderNationalCode, null);
+        shareHolderService.save(shareHolder);
+    }
     public void updateShareHolderName(){}
     public void updateShareHolderPhoneNumber(){}
     public void updateShareHolderNationalCode(){}
