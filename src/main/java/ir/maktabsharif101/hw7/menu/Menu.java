@@ -515,7 +515,11 @@ public class Menu {
         shareHolderService.listAllShareHolders();
     }
 
-    public void deleteShareHolder() {
+    public void deleteShareHolder() throws SQLException {
+        System.out.print("Enter Shareholder's ID: ");
+        int id = scanner.nextInt();
+
+        shareHolderService.delete(id);
     }
 
     public void productMenu() {
