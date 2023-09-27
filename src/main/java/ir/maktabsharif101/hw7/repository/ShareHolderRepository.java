@@ -119,4 +119,16 @@ public class ShareHolderRepository {
         return shareHolders;
     }
 
+    public void delete(int id) throws SQLException {
+        String queryShareHolderTable="DELETE FROM shareholder WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(queryShareHolderTable);
+        preparedStatement.setInt(1,id);
+        preparedStatement.executeUpdate();
+
+        String queryShareHolder_Brand_Table="DELETE FROM shareholder_brand WHERE shareholderid=?";
+        PreparedStatement preparedStatement_ShareHolder_Brand_Relation=connection.prepareStatement(queryShareHolder_Brand_Table);
+        preparedStatement_ShareHolder_Brand_Relation.setInt(1,id);
+        preparedStatement_ShareHolder_Brand_Relation.executeUpdate();
+    }
+
 }

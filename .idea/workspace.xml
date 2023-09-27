@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add 3 methods to the ShareHolderRepository class: countBrandOfShareHolder(int),loadShareHolder(int) and buyBrandShares(int,int)">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add 2 methods to the ShareHolderRepository class: countAllShareHolders() and listAllShareHolders()">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" afterDir="false" />
     </list>
@@ -72,7 +72,7 @@
       <workItem from="1695704154504" duration="17118000" />
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
-      <workItem from="1695791992794" duration="5370000" />
+      <workItem from="1695791992794" duration="5878000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -361,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695796835035</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add 2 methods to the ShareHolderRepository class: countAllShareHolders() and listAllShareHolders()">
+      <created>1695797426086</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1695797426086</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +386,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create CategoryRepository class and add its connection" />
     <MESSAGE value="add save method to CategoryRepository class" />
     <MESSAGE value="add doesExist method to CategoryRepository class" />
     <MESSAGE value="add updateCategoryName method to CategoryRepository class" />
@@ -404,6 +410,7 @@
     <MESSAGE value="add updateNationalCode method to ShareHolderRepository class" />
     <MESSAGE value="update save method of Brand class to include the shareholder-brand relationship" />
     <MESSAGE value="add 3 methods to the ShareHolderRepository class: countBrandOfShareHolder(int),loadShareHolder(int) and buyBrandShares(int,int)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 3 methods to the ShareHolderRepository class: countBrandOfShareHolder(int),loadShareHolder(int) and buyBrandShares(int,int)" />
+    <MESSAGE value="add 2 methods to the ShareHolderRepository class: countAllShareHolders() and listAllShareHolders()" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2 methods to the ShareHolderRepository class: countAllShareHolders() and listAllShareHolders()" />
   </component>
 </project>
