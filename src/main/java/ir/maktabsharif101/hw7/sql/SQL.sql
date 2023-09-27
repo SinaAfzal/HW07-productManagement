@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS users(
     fullName varchar(50),
     userName varchar(50) NOT NULL UNIQUE ,
     email varchar(50) NOT NULL UNIQUE NOT NULL ,
-    password varchar(50) NOT NULL
+    password_ varchar(50) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS category(
