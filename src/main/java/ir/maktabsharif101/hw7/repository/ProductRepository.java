@@ -23,10 +23,10 @@ public class ProductRepository {
         return product;
     }
 
-    public boolean doesExist(Product product) throws SQLException{
-        String query="SELECT productname FROM product WHERE productname=?";
+    public boolean doesExist(int id) throws SQLException{
+        String query="SELECT productname FROM product WHERE id=?";
         PreparedStatement preparedStatement=connection.prepareStatement(query);
-        preparedStatement.setString(1, product.getProductName());
+        preparedStatement.setInt(1, id);
         ResultSet resultSet=preparedStatement.executeQuery();
         return resultSet.next();
     }
