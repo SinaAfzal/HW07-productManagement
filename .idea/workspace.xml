@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateShareHolderName method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add loadShareHolder method to Menu class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,28 +74,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="14535000" />
-    </task>
-    <task id="LOCAL-00086" summary="add sellBrandShares method to ShareHolderRepository class">
-      <created>1695823550858</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1695823550858</updated>
-    </task>
-    <task id="LOCAL-00087" summary="modify and overload doesExist method in ShareHolderRepository class">
-      <created>1695824258902</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1695824258902</updated>
-    </task>
-    <task id="LOCAL-00088" summary="add save method to ShareHolderService class">
-      <created>1695824279359</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1695824279359</updated>
+      <workItem from="1695832469880" duration="14870000" />
     </task>
     <task id="LOCAL-00089" summary="add updateShareHolderName method to ShareHolderService class">
       <created>1695824519315</created>
@@ -419,7 +398,28 @@
       <option name="project" value="LOCAL" />
       <updated>1695846737098</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="add updateShareHolderPhoneNumber method to Menu class">
+      <created>1695847166466</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1695847166466</updated>
+    </task>
+    <task id="LOCAL-00136" summary="add updateShareHolderNationalCode method to Menu class">
+      <created>1695847325254</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1695847325254</updated>
+    </task>
+    <task id="LOCAL-00137" summary="add loadShareHolder method to Menu class">
+      <created>1695847447378</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1695847447378</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,9 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add login method to Menu class" />
-    <MESSAGE value="add mainMenu method to Menu class" />
-    <MESSAGE value="add userMenu method to Menu class" />
     <MESSAGE value="add updateUserFullName method to Menu class" />
     <MESSAGE value="add categoryMenu method to Menu class" />
     <MESSAGE value="add createCategory method to Menu class" />
@@ -462,6 +459,9 @@
     <MESSAGE value="add shareHolderMenu method to Menu class" />
     <MESSAGE value="add createShareHolder method to Menu class" />
     <MESSAGE value="add updateShareHolderName method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updateShareHolderName method to Menu class" />
+    <MESSAGE value="add updateShareHolderPhoneNumber method to Menu class" />
+    <MESSAGE value="add updateShareHolderNationalCode method to Menu class" />
+    <MESSAGE value="add loadShareHolder method to Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add loadShareHolder method to Menu class" />
   </component>
 </project>

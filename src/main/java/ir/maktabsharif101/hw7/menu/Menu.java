@@ -510,7 +510,9 @@ public class Menu {
         shareHolderService.load(id);
     }
 
-    public void listAllShareHolders() {
+    public void listAllShareHolders() throws SQLException {
+        System.out.println();
+        shareHolderService.listAllShareHolders();
     }
 
     public void deleteShareHolder() {
