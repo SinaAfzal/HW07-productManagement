@@ -1,5 +1,6 @@
 package ir.maktabsharif101.hw7.service;
 
+import ir.maktabsharif101.hw7.entities.Category;
 import ir.maktabsharif101.hw7.entities.Product;
 import ir.maktabsharif101.hw7.repository.ProductRepository;
 
@@ -71,6 +72,25 @@ public class ProductService {
         }else {
             System.out.println("Invalid product id!");
             return -1;
+        }
+    }
+
+    public Product load(int id) throws SQLException {
+        if (productRepository.doesExist(id)) {
+            Product loadedProduct = productRepository.load(id);
+            if (loadedProduct == null)
+                System.out.println("OOPS! Product was found but could not be loaded!");
+            else {
+                System.out.println("Product with ID=" + id + " is loaded successfully!:");
+                System.out.println("   -Product name: " + loadedProduct.getProductName());
+                System.out.println("   -Product creation date: " + loadedProduct.getCreateDate());
+                System.out.println("   -Product category ID: "+ loadedProduct.getCategoryId());
+                System.out.println("   -Product brand ID: "+loadedProduct.getBrandId());
+            }
+            return loadedProduct;
+        } else {
+            System.out.println("Invalid category id!");
+            return null;
         }
     }
 
