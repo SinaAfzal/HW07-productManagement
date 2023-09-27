@@ -74,5 +74,22 @@ public class CategoryService {
         }
     }
 
+    public Category[] listAllCategories() throws SQLException {
+        Category[] categories = categoryRepository.listAllCategories();
+        if (categories.length > 0) {
+            System.out.println("# List of available categories on database: ");
+            System.out.println("----------------------------");
+            System.out.println("     ID    |   Category name");
+            System.out.println("----------------------------");
+
+            for (int i = 0; i < categories.length; i++) {
+                System.out.println("|     " + categories[i].getId() + "    " + "    " + categories[i].getCategoryName());
+            }
+            System.out.println("----------------------------");
+        } else {
+            System.out.println("No categories available!");
+        }
+        return categories;
+    }
 
 }
