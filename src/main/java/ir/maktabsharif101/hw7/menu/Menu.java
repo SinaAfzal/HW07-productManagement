@@ -534,7 +534,18 @@ public class Menu {
         shareHolderService.buyBrandShares(shareHolderID,brandID);
     }
 
-    public void SellBrandShares(){}
+    public void SellBrandShares() throws SQLException {
+        System.out.println("Shareholder's ID: ");
+        int shareHolderID=scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println("Brand's ID: ");
+        int brandID=scanner.nextInt();
+        scanner.nextLine();
+
+        shareHolderService.sellBrandShares(shareHolderID,brandID);
+
+    }
 
     public void loadShareHolder() throws SQLException {
         System.out.print("Enter Shareholder's ID: ");
