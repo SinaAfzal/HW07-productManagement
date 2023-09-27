@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateNationalCode method to ShareHolderService class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add doesOwn method to ShareHolderRepository class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,21 +73,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="13704000" />
-    </task>
-    <task id="LOCAL-00043" summary="add delete method to the ShareHolderRepository class">
-      <created>1695798101226</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1695798101226</updated>
-    </task>
-    <task id="LOCAL-00044" summary="add countShareHoldersOfBrand to the BrandRepository class">
-      <created>1695798654646</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1695798654646</updated>
+      <workItem from="1695811481322" duration="14531000" />
     </task>
     <task id="LOCAL-00045" summary="add load method to the BrandRepository class">
       <created>1695799386594</created>
@@ -417,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695824733474</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="add load method to ShareHolderService class">
+      <created>1695825311895</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1695825311895</updated>
+    </task>
+    <task id="LOCAL-00093" summary="add doesOwn method to ShareHolderRepository class">
+      <created>1695825685662</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1695825685662</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modify and overload doesExist method in CategoryRepository" />
-    <MESSAGE value="add save method to CategoryService class" />
     <MESSAGE value="modify updateCategoryName method in CategoryRepository" />
     <MESSAGE value="add updateCategoryName method to CategoryService class" />
     <MESSAGE value="add updateCategoryDescription method to CategoryService class" />
@@ -460,6 +459,8 @@
     <MESSAGE value="add updateShareHolderName method to ShareHolderService class" />
     <MESSAGE value="add updatePhoneNumber method to ShareHolderService class" />
     <MESSAGE value="add updateNationalCode method to ShareHolderService class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updateNationalCode method to ShareHolderService class" />
+    <MESSAGE value="add load method to ShareHolderService class" />
+    <MESSAGE value="add doesOwn method to ShareHolderRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add doesOwn method to ShareHolderRepository class" />
   </component>
 </project>

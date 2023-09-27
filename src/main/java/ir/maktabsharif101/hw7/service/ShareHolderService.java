@@ -100,4 +100,24 @@ public class ShareHolderService {
         }
     }
 
+    public int buyBrandShares(int shareHolderID, int brandID) throws SQLException {
+        if (shareHolderRepository.doesExist(shareHolderID)) {
+            if (!shareHolderRepository.doesOwn(shareHolderID, brandID)) {
+                int serverEcho = shareHolderRepository.buyBrandShares(shareHolderID, brandID);
+                if (serverEcho > 0) {
+                    System.out.println("Brand share is added to the shareholder's portfolio!");
+                } else {
+                    System.out.println("Shareholder was found and he does not own the share. but buying process was failed!");
+                }
+                return serverEcho;
+            } else {
+                System.out.println("The shareholder already owns this share!");
+                return -1;
+            }
+        } else {
+            System.out.println("Invalid shareholder ID!");
+            return -1;
+        }
+    }
+
 }
