@@ -601,7 +601,16 @@ public class Menu {
         productService.updateProductBrand(productId, newBrandId);
     }
 
-    public void updateProductCategory() {
+    public void updateProductCategory() throws SQLException {
+        System.out.print("Product ID: ");
+        int productId = scanner.nextInt();
+
+        System.out.println("*** Select a category id for the product from the list below ***");
+        categoryService.listAllCategories();
+        System.out.println("New product category (Enter category ID): ");
+        int newCategoryId = scanner.nextInt();
+
+        productService.updateProductCategory(productId, newCategoryId);
     }
 
     public void loadProduct() {
