@@ -93,7 +93,7 @@ public class ShareHolderRepository {
             Integer[] brandIDs = new Integer[numberOfFoundBrands];
             int counter = 0;
             while (resultSetFoundRelatedBrands.next()) {
-                brandIDs[counter++] = resultSet.getInt("brandid");
+                brandIDs[counter++] = resultSetFoundRelatedBrands.getInt(1);
             }
             shareHolder.setBrandIds(brandIDs);
         }

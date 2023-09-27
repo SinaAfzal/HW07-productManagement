@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add getter to MENU" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="change menu title in shareholderMenu method">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,14 +79,7 @@
       <workItem from="1695811481322" duration="16056000" />
       <workItem from="1695832469880" duration="18227000" />
       <workItem from="1695850864616" duration="1631000" />
-      <workItem from="1695852534956" duration="5874000" />
-    </task>
-    <task id="LOCAL-00107" summary="add isEmailValid method to Validation class">
-      <created>1695836885776</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1695836885776</updated>
+      <workItem from="1695852534956" duration="6182000" />
     </task>
     <task id="LOCAL-00108" summary="add isWebsiteValid method to Validation class">
       <created>1695837295855</created>
@@ -422,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695858402473</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="change menu title in shareholderMenu method">
+      <created>1695858517662</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858517662</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +442,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add loadBrand method to Menu class" />
     <MESSAGE value="add listAllBrands method to Menu class" />
     <MESSAGE value="add deleteBrand method to Menu class" />
     <MESSAGE value="add shareHolderMenu method to Menu class" />
@@ -465,7 +466,8 @@
     <MESSAGE value="minor null pointer bug fix" />
     <MESSAGE value="call menu" />
     <MESSAGE value="add getter to MENU" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getter to MENU" />
+    <MESSAGE value="change menu title in shareholderMenu method" />
+    <option name="LAST_COMMIT_MESSAGE" value="change menu title in shareholderMenu method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
