@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add deleteCategory method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="change int[] shareHolderIds to Integer[] shareHolderIds in Brand and BrandRepository classes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,28 +75,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="10584000" />
-    </task>
-    <task id="LOCAL-00074" summary="add delete method to CategoryService class">
-      <created>1695818513504</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1695818513504</updated>
-    </task>
-    <task id="LOCAL-00075" summary="create ProductService class and add its connection">
-      <created>1695818825250</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1695818825250</updated>
-    </task>
-    <task id="LOCAL-00076" summary="modify doesExist method in ProductRepository class">
-      <created>1695819596153</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1695819596153</updated>
+      <workItem from="1695832469880" duration="11955000" />
     </task>
     <task id="LOCAL-00077" summary="Add save method to ProductService class">
       <created>1695819868066</created>
@@ -419,7 +399,28 @@
       <option name="project" value="LOCAL" />
       <updated>1695842704801</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="add brandMenu method to Menu class">
+      <created>1695843212198</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1695843212198</updated>
+    </task>
+    <task id="LOCAL-00124" summary="change int[] brandIds to Integer[] brandIds in ShareHolder and ShareHolderRepository classes">
+      <created>1695844115334</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1695844115334</updated>
+    </task>
+    <task id="LOCAL-00125" summary="change int[] shareHolderIds to Integer[] shareHolderIds in Brand and BrandRepository classes">
+      <created>1695844229389</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1695844229389</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,11 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create UserService class and add its connection" />
-    <MESSAGE value="modify doesExist method in UserRepository class" />
-    <MESSAGE value="add save method to UserService class" />
-    <MESSAGE value="add login method to UserService class" />
-    <MESSAGE value="add updateFullName method to UserService class" />
     <MESSAGE value="create Menu class and add its connections" />
     <MESSAGE value="add homePage method to Menu class" />
     <MESSAGE value="create Validation class" />
@@ -462,6 +458,11 @@
     <MESSAGE value="add loadCategory method to Menu class" />
     <MESSAGE value="add listAllCategories method to Menu class" />
     <MESSAGE value="add deleteCategory method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add deleteCategory method to Menu class" />
+    <MESSAGE value="add brandMenu method to Menu class" />
+    <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder class" />
+    <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder class and anywhere it was used" />
+    <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder and ShareHolderRepository classes" />
+    <MESSAGE value="change int[] shareHolderIds to Integer[] shareHolderIds in Brand and BrandRepository classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="change int[] shareHolderIds to Integer[] shareHolderIds in Brand and BrandRepository classes" />
   </component>
 </project>

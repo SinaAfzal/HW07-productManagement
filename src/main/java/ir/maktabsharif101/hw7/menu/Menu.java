@@ -1,5 +1,6 @@
 package ir.maktabsharif101.hw7.menu;
 
+import ir.maktabsharif101.hw7.entities.Brand;
 import ir.maktabsharif101.hw7.entities.Category;
 import ir.maktabsharif101.hw7.entities.User;
 import ir.maktabsharif101.hw7.service.*;
@@ -152,8 +153,8 @@ public class Menu {
     }
 
     public void userMenu() throws SQLException {
-        boolean userMenuIsActive=true;
-        while (userMenuIsActive){
+        boolean userMenuIsActive = true;
+        while (userMenuIsActive) {
             System.out.println("+--------------------------------------------------+");
             System.out.println("|                HomeWork7-Maktab101               |");
             System.out.println("|      Product/Brand/Category Management system    |");
@@ -183,13 +184,13 @@ public class Menu {
 
     public void updateUserFullName() throws SQLException {
         System.out.print("Enter your new full name: ");
-        String newFullName=scanner.nextLine();
-        userService.updateFullName(newFullName,user.getId());
+        String newFullName = scanner.nextLine();
+        userService.updateFullName(newFullName, user.getId());
     }
 
     public void categoryMenu() throws SQLException {
-        boolean categoryMenuIsActive=true;
-        while (categoryMenuIsActive){
+        boolean categoryMenuIsActive = true;
+        while (categoryMenuIsActive) {
             System.out.println("+--------------------------------------------------+");
             System.out.println("|                HomeWork7-Maktab101               |");
             System.out.println("|      Product/Brand/Category Management system    |");
@@ -229,52 +230,57 @@ public class Menu {
 
     public void createCategory() throws SQLException {
         System.out.println("Category name: ");
-        String categoryName=scanner.nextLine();
+        String categoryName = scanner.nextLine();
 
         System.out.println("Category description: ");
-        String categoryDescription=scanner.nextLine();
+        String categoryDescription = scanner.nextLine();
 
-        Category category=new Category(null,categoryName,categoryDescription);
+        Category category = new Category(null, categoryName, categoryDescription);
         categoryService.save(category);
     }
+
     public void updateCategoryName() throws SQLException {
         System.out.print("Old category name: ");
-        String oldCategoryName=scanner.nextLine();
+        String oldCategoryName = scanner.nextLine();
 
         System.out.print("New category name: ");
-        String newCategoryName=scanner.nextLine();
+        String newCategoryName = scanner.nextLine();
 
-        categoryService.updateCategoryName(newCategoryName,oldCategoryName);
+        categoryService.updateCategoryName(newCategoryName, oldCategoryName);
     }
+
     public void updateCategoryDescription() throws SQLException {
         System.out.print("Category ID: ");
-        int id=scanner.nextInt();
+        int id = scanner.nextInt();
 
         System.out.println("New category description: ");
-        String newDescription=scanner.nextLine();
+        String newDescription = scanner.nextLine();
 
-        categoryService.updateCategoryDescription(newDescription,id);
+        categoryService.updateCategoryDescription(newDescription, id);
     }
+
     public void loadCategory() throws SQLException {
         System.out.print("Enter Category ID: ");
-        int id=scanner.nextInt();
+        int id = scanner.nextInt();
 
         categoryService.load(id);
     }
+
     public void listAllCategories() throws SQLException {
         System.out.println();
         categoryService.listAllCategories();
     }
+
     public void deleteCategory() throws SQLException {
         System.out.print("Enter Category ID: ");
-        int id=scanner.nextInt();
+        int id = scanner.nextInt();
 
         categoryService.delete(id);
     }
 
-    public void brandMenu(){
-        boolean brandMenuIsActive=true;
-        while (brandMenuIsActive){
+    public void brandMenu() throws SQLException {
+        boolean brandMenuIsActive = true;
+        while (brandMenuIsActive) {
             System.out.println("+--------------------------------------------------+");
             System.out.println("|                HomeWork7-Maktab101               |");
             System.out.println("|      Product/Brand/Category Management system    |");
@@ -312,15 +318,49 @@ public class Menu {
         }
     }
 
-    public void createBrand(){}
-    public void updateBrandName(){}
-    public void updateBrandDescription(){}
-    public void loadBrand(){}
-    public void listAllBrands(){}
-    public void deleteBrand(){}
+    public void createBrand() throws SQLException {
+        System.out.println("Brand name: ");
+        String brandName = scanner.nextLine();
+
+        System.out.println("Brand website: ");
+        String website = null;
+        boolean invalidWebsite = true;
+        while (invalidWebsite) {
+            website = scanner.nextLine();
+            if (Validation.isWebsiteValid(website)) {
+                invalidWebsite = false;
+            } else {
+                System.out.println("Enter a valid website!");
+            }
+        }
+
+        System.out.println("Brand description: ");
+        String brandDescription = scanner.nextLine();
+
+        Brand brand = new Brand(null, brandName, website, brandDescription, null);
+        brandService.save(brand);
+    }
+
+    public void updateBrandName() {
+    }
+
+    public void updateBrandDescription() {
+    }
+
+    public void loadBrand() {
+    }
+
+    public void listAllBrands() {
+    }
+
+    public void deleteBrand() {
+    }
 
 
-    public void shareholderMenu(){}
-    public void productMenu(){}
+    public void shareholderMenu() {
+    }
+
+    public void productMenu() {
+    }
 
 }
