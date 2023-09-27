@@ -243,7 +243,15 @@ public class Menu {
 
         categoryService.updateCategoryName(newCategoryName,oldCategoryName);
     }
-    public void updateCategoryDescription(){}
+    public void updateCategoryDescription() throws SQLException {
+        System.out.print("Category ID: ");
+        int id=scanner.nextInt();
+
+        System.out.println("New category description: ");
+        String newDescription=scanner.nextLine();
+
+        categoryService.updateCategoryDescription(newDescription,id);
+    }
     public void loadCategory(){}
     public void listAllCategories(){}
     public void deleteCategory(){}
