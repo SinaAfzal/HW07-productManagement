@@ -382,7 +382,54 @@ public class Menu {
 
 
     public void shareholderMenu() {
+        boolean shareholderMenuIsActive=true;
+        while (shareholderMenuIsActive){
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|                HomeWork7-Maktab101               |");
+            System.out.println("|      Product/Brand/Category Management system    |");
+            System.out.println("|           Developed by: Sina Afzalsoltani        |");
+            System.out.println("|                  SHARE-HOLDER MENU               |");
+            System.out.println("+--------------------------------------------------+");
+            System.out.println();
+            System.out.println();
+            System.out.println("Choose an option from the menu:");
+            System.out.println("1- Create a new shareholder");
+            System.out.println("2- Update shareholder's name");
+            System.out.println("3- Update shareholder's phone number");
+            System.out.println("4- Update shareholder's national code");
+            System.out.println("5- Load a shareholder");
+            System.out.println("6- View list of all shareholders");
+            System.out.println("7- Delete a shareholder");
+            System.out.println("8- exit");
+
+            String input = scanner.next();
+
+            switch (input) {
+                case "1" -> createShareHolder();
+                case "2" -> updateShareHolderName();
+                case "3" -> updateShareHolderPhoneNumber();
+                case "4" -> updateShareHolderNationalCode();
+                case "5" -> loadShareHolder();
+                case "6" -> listAllShareHolders();
+                case "7" -> deleteShareHolder();
+                case "8" -> shareholderMenuIsActive = false;
+                default -> {
+                    System.out.println("Invalid input!");
+                    scanner.next();
+                    System.out.println("**********  Press any key to continue   **********");
+                    scanner.next();
+                }
+            }
+        }
     }
+
+    public void createShareHolder(){}
+    public void updateShareHolderName(){}
+    public void updateShareHolderPhoneNumber(){}
+    public void updateShareHolderNationalCode(){}
+    public void loadShareHolder(){}
+    public void listAllShareHolders(){}
+    public void deleteShareHolder(){}
 
     public void productMenu() {
     }
