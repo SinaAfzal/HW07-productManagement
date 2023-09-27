@@ -97,11 +97,23 @@ public class BrandRepository {
     }
 
     public int countAllBrands() throws SQLException {
-        String query="SELECT count(*) FROM brand";
-        PreparedStatement preparedStatement=connection.prepareStatement(query);
-        ResultSet resultSet=preparedStatement.executeQuery();
+        String query = "SELECT COUNT(*) FROM brand";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ResultSet resultSet = preparedStatement.executeQuery();
         resultSet.next();
         return resultSet.getInt(1);
+    }
+
+    public Brand[] listAllBrands() throws SQLException {
+        String query="SELECT * FROM brand";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        Brand[] brands=new Brand[countAllBrands()];
+        int counter=0;
+        while (resultSet.next()){
+            brands[counter++]=load(resultSet.getInt("id"));
+        }
+        return brands;
     }
 
 }
