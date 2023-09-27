@@ -56,6 +56,7 @@ public class Menu {
                     System.out.println("Invalid input!");
                     scanner.next();
                     System.out.println("**********  Press any key to continue   **********");
+                    scanner.next();
                 }
             }
         }
@@ -174,6 +175,7 @@ public class Menu {
                     System.out.println("Invalid input!");
                     scanner.next();
                     System.out.println("**********  Press any key to continue   **********");
+                    scanner.next();
                 }
             }
         }
@@ -197,7 +199,7 @@ public class Menu {
             System.out.println();
             System.out.println();
             System.out.println("Choose an option from the menu:");
-            System.out.println("1- Create new category");
+            System.out.println("1- Create a new category");
             System.out.println("2- Update category name");
             System.out.println("3- Update category description");
             System.out.println("4- Load a category");
@@ -219,6 +221,7 @@ public class Menu {
                     System.out.println("Invalid input!");
                     scanner.next();
                     System.out.println("**********  Press any key to continue   **********");
+                    scanner.next();
                 }
             }
         }
@@ -270,7 +273,53 @@ public class Menu {
     }
 
     public void brandMenu(){
+        boolean brandMenuIsActive=true;
+        while (brandMenuIsActive){
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|                HomeWork7-Maktab101               |");
+            System.out.println("|      Product/Brand/Category Management system    |");
+            System.out.println("|           Developed by: Sina Afzalsoltani        |");
+            System.out.println("|                     BRAND MENU                   |");
+            System.out.println("+--------------------------------------------------+");
+            System.out.println();
+            System.out.println();
+            System.out.println("Choose an option from the menu:");
+            System.out.println("1- Create a new brand");
+            System.out.println("2- Update brand name");
+            System.out.println("3- Update brand description");
+            System.out.println("4- Load a brand");
+            System.out.println("5- View list of all brands");
+            System.out.println("6- Delete a brand");
+            System.out.println("7- exit");
+
+            String input = scanner.next();
+
+            switch (input) {
+                case "1" -> createBrand();
+                case "2" -> updateBrandName();
+                case "3" -> updateBrandDescription();
+                case "4" -> loadBrand();
+                case "5" -> listAllBrands();
+                case "6" -> deleteBrand();
+                case "7" -> brandMenuIsActive = false;
+                default -> {
+                    System.out.println("Invalid input!");
+                    scanner.next();
+                    System.out.println("**********  Press any key to continue   **********");
+                    scanner.next();
+                }
+            }
+        }
     }
+
+    public void createBrand(){}
+    public void updateBrandName(){}
+    public void updateBrandDescription(){}
+    public void loadBrand(){}
+    public void listAllBrands(){}
+    public void deleteBrand(){}
+
+
     public void shareholderMenu(){}
     public void productMenu(){}
 

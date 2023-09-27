@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateCategoryName method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add deleteCategory method to Menu class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,35 +74,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="9832000" />
-    </task>
-    <task id="LOCAL-00070" summary="add updateCategoryName method to CategoryService class">
-      <created>1695817824911</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1695817824911</updated>
-    </task>
-    <task id="LOCAL-00071" summary="add updateCategoryDescription method to CategoryService class">
-      <created>1695817943921</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1695817943921</updated>
-    </task>
-    <task id="LOCAL-00072" summary="add load method to CategoryService class">
-      <created>1695818231890</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1695818231890</updated>
-    </task>
-    <task id="LOCAL-00073" summary="add listAllCategories method to CategoryService class">
-      <created>1695818423406</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1695818423406</updated>
+      <workItem from="1695832469880" duration="10584000" />
     </task>
     <task id="LOCAL-00074" summary="add delete method to CategoryService class">
       <created>1695818513504</created>
@@ -419,7 +391,35 @@
       <option name="project" value="LOCAL" />
       <updated>1695842274180</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="add updateCategoryDescription method to Menu class">
+      <created>1695842451961</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1695842451961</updated>
+    </task>
+    <task id="LOCAL-00120" summary="add loadCategory method to Menu class">
+      <created>1695842532510</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1695842532510</updated>
+    </task>
+    <task id="LOCAL-00121" summary="add listAllCategories method to Menu class">
+      <created>1695842651182</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1695842651182</updated>
+    </task>
+    <task id="LOCAL-00122" summary="add deleteCategory method to Menu class">
+      <created>1695842704801</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1695842704801</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,10 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add buyBrandShares method to ShareHolderService class" />
-    <MESSAGE value="add sellBrandShares method to ShareHolderService class" />
-    <MESSAGE value="add listAllShareHolders method to ShareHolderService class" />
-    <MESSAGE value="add delete method to ShareHolderService class" />
     <MESSAGE value="create UserService class and add its connection" />
     <MESSAGE value="modify doesExist method in UserRepository class" />
     <MESSAGE value="add save method to UserService class" />
@@ -462,6 +458,10 @@
     <MESSAGE value="add categoryMenu method to Menu class" />
     <MESSAGE value="add createCategory method to Menu class" />
     <MESSAGE value="add updateCategoryName method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updateCategoryName method to Menu class" />
+    <MESSAGE value="add updateCategoryDescription method to Menu class" />
+    <MESSAGE value="add loadCategory method to Menu class" />
+    <MESSAGE value="add listAllCategories method to Menu class" />
+    <MESSAGE value="add deleteCategory method to Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add deleteCategory method to Menu class" />
   </component>
 </project>
