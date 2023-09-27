@@ -28,6 +28,6 @@ public class ApplicationContext {
 
         BRAND_SERVICE=new BrandService(BRAND_REPOSITORY);
         CATEGORY_SERVICE=new CategoryService((CATEGORY_REPOSITORY));
-        PRODUCT_SERVICE=new ProductService(PRODUCT_REPOSITORY);
+        PRODUCT_SERVICE=new ProductService(PRODUCT_REPOSITORY, CATEGORY_SERVICE, BRAND_SERVICE);
     }
 }
