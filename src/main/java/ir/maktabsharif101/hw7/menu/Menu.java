@@ -522,7 +522,54 @@ public class Menu {
         shareHolderService.delete(id);
     }
 
-    public void productMenu() {
+    public void productMenu() throws SQLException{
+        boolean productMenuIsActive=true;
+        while (productMenuIsActive){
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|                HomeWork7-Maktab101               |");
+            System.out.println("|      Product/Brand/Category Management system    |");
+            System.out.println("|           Developed by: Sina Afzalsoltani        |");
+            System.out.println("|                    PRODUCT MENU                  |");
+            System.out.println("+--------------------------------------------------+");
+            System.out.println();
+            System.out.println();
+            System.out.println("Choose an option from the menu:");
+            System.out.println("1- Create a new product");
+            System.out.println("2- Update product's name");
+            System.out.println("3- Update product's brand");
+            System.out.println("4- Update product's category");
+            System.out.println("5- Load a product");
+            System.out.println("6- View list of all products");
+            System.out.println("7- Delete a product");
+            System.out.println("8- exit");
+
+            String input = scanner.next();
+
+            switch (input) {
+                case "1" -> createProduct();
+                case "2" -> updateProductName();
+                case "3" -> updateProductBrand();
+                case "4" -> updateProductCategory();
+                case "5" -> loadProduct();
+                case "6" -> listAllProducts();
+                case "7" -> deleteProduct();
+                case "8" -> productMenuIsActive = false;
+                default -> {
+                    System.out.println("Invalid input!");
+                    scanner.next();
+                    System.out.println("**********  Press any key to continue   **********");
+                    scanner.next();
+                }
+            }
+        }
     }
+
+    public void createProduct(){}
+    public void updateProductName(){}
+    public void updateProductBrand(){}
+    public void updateProductCategory(){}
+    public void loadProduct(){}
+    public void listAllProducts(){}
+    public void deleteProduct(){}
 
 }

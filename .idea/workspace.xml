@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add loadShareHolder method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add deleteShareHolder method to Menu class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,21 +74,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="14870000" />
-    </task>
-    <task id="LOCAL-00089" summary="add updateShareHolderName method to ShareHolderService class">
-      <created>1695824519315</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1695824519315</updated>
-    </task>
-    <task id="LOCAL-00090" summary="add updatePhoneNumber method to ShareHolderService class">
-      <created>1695824654787</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1695824654787</updated>
+      <workItem from="1695832469880" duration="15373000" />
     </task>
     <task id="LOCAL-00091" summary="add updateNationalCode method to ShareHolderService class">
       <created>1695824733474</created>
@@ -419,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695847447378</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="add listAllShareHolders method to Menu class">
+      <created>1695847498252</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1695847498252</updated>
+    </task>
+    <task id="LOCAL-00139" summary="add deleteShareHolder method to Menu class">
+      <created>1695847566970</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1695847566970</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,8 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updateUserFullName method to Menu class" />
-    <MESSAGE value="add categoryMenu method to Menu class" />
     <MESSAGE value="add createCategory method to Menu class" />
     <MESSAGE value="add updateCategoryName method to Menu class" />
     <MESSAGE value="add updateCategoryDescription method to Menu class" />
@@ -462,6 +460,8 @@
     <MESSAGE value="add updateShareHolderPhoneNumber method to Menu class" />
     <MESSAGE value="add updateShareHolderNationalCode method to Menu class" />
     <MESSAGE value="add loadShareHolder method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add loadShareHolder method to Menu class" />
+    <MESSAGE value="add listAllShareHolders method to Menu class" />
+    <MESSAGE value="add deleteShareHolder method to Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add deleteShareHolder method to Menu class" />
   </component>
 </project>
