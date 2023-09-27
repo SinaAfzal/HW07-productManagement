@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add load method to BrandService class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add delete method to BrandService class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,21 +73,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="4865000" />
-    </task>
-    <task id="LOCAL-00015" summary="add login method to UserRepository class">
-      <created>1695708910434</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1695708910434</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add updateFullName method to UserRepository class">
-      <created>1695711539098</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1695711539098</updated>
+      <workItem from="1695811481322" duration="5391000" />
     </task>
     <task id="LOCAL-00017" summary="create CategoryRepository class and add its connection">
       <created>1695711738347</created>
@@ -417,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695815757793</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add listAllBrands method to BrandService class">
+      <created>1695816466408</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1695816466408</updated>
+    </task>
+    <task id="LOCAL-00065" summary="add delete method to BrandService class">
+      <created>1695816610794</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1695816610794</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updatePhoneNumber method to ShareHolderRepository class" />
-    <MESSAGE value="add updateNationalCode method to ShareHolderRepository class" />
     <MESSAGE value="update save method of Brand class to include the shareholder-brand relationship" />
     <MESSAGE value="add 3 methods to the ShareHolderRepository class: countBrandOfShareHolder(int),loadShareHolder(int) and buyBrandShares(int,int)" />
     <MESSAGE value="add 2 methods to the ShareHolderRepository class: countAllShareHolders() and listAllShareHolders()" />
@@ -460,6 +459,8 @@
     <MESSAGE value="add updateBrandName method to BrandService class" />
     <MESSAGE value="add updateBrandDescription method to BrandService class" />
     <MESSAGE value="add load method to BrandService class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add load method to BrandService class" />
+    <MESSAGE value="add listAllBrands method to BrandService class" />
+    <MESSAGE value="add delete method to BrandService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete method to BrandService class" />
   </component>
 </project>
