@@ -71,5 +71,17 @@ public class CategoryRepository {
         return category;
     }
 
+    public Category[] listAllCategories() throws SQLException {
+        String query="SELECT id FROM category";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        Category[] categories=new Category[countAllCategories()];
+        int counter=0;
+        while (resultSet.next()){
+            categories[counter++]=load(resultSet.getInt(1));
+        }
+        return categories;
+    }
+
 
 }
