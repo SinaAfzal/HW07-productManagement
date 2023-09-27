@@ -1,9 +1,12 @@
 package ir.maktabsharif101.hw7.service;
 
 import ir.maktabsharif101.hw7.entities.Category;
+import ir.maktabsharif101.hw7.entities.Product;
 import ir.maktabsharif101.hw7.entities.ShareHolder;
 import ir.maktabsharif101.hw7.repository.ShareHolderRepository;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ShareHolderService {
@@ -131,6 +134,24 @@ public class ShareHolderService {
         } else {
             System.out.println("Invalid shareholder ID!");
         }
+    }
+
+    public ShareHolder[] listAllShareHolders() throws SQLException {
+        ShareHolder[] shareHolders = shareHolderRepository.listAllShareHolders();
+        if (shareHolders.length > 0) {
+            System.out.println("# List of available shareholders on database: ");
+            System.out.println("-------------------------------");
+            System.out.println("     ID    |   Shareholder name");
+            System.out.println("-------------------------------");
+
+            for (int i = 0; i < shareHolders.length; i++) {
+                System.out.println("|     " + shareHolders[i].getId() + "    " + "    " + shareHolders[i].getShareHolderName());
+            }
+            System.out.println("-------------------------------");
+        } else {
+            System.out.println("No shareholders available!");
+        }
+        return shareHolders;
     }
 
 }
