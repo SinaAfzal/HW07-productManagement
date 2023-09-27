@@ -578,7 +578,15 @@ public class Menu {
         Product product=new Product(null,productName,categoryId,brandId);
         productService.save(product);
     }
-    public void updateProductName(){}
+    public void updateProductName() throws SQLException {
+        System.out.print("Product ID: ");
+        int id = scanner.nextInt();
+
+        System.out.print("New product name: ");
+        String newProductName = scanner.nextLine();
+
+        productService.updateProductName(newProductName, id);
+    }
     public void updateProductBrand(){}
     public void updateProductCategory(){}
     public void loadProduct(){}
