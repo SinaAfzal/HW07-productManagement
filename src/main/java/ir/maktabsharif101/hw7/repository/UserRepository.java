@@ -12,7 +12,7 @@ public class UserRepository {
     }
 
     public User save(User user) throws SQLException {
-        String query = "INSERT INTO users (fullname, username, email, password) VALUES (?,?,?,?)";
+        String query = "INSERT INTO users (fullname, username, email, password_) VALUES (?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
         preparedStatement.setString(1, user.getFullName());
         preparedStatement.setString(2, user.getUserName());
@@ -28,7 +28,7 @@ public class UserRepository {
     public boolean mailDoesExist(String email) throws SQLException {
         String query = "SELECT username FROM users WHERE email ILIKE ?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(2, email);
+        preparedStatement.setString(1, email);
         ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet.next();
     }
@@ -48,12 +48,12 @@ public class UserRepository {
     }
 
     public User login(String username, String password) throws SQLException {
-        String query = "SELECT * FROM users WHERE username=? AND password=?";
+        String query = "SELECT * FROM users WHERE (username=? AND password_=?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, username);
         preparedStatement.setString(2, password);
         ResultSet resultSet = preparedStatement.executeQuery();
-        if (resultSet.next()) {
+        while (resultSet.next()) {
             User user = new User();
             user.setId(resultSet.getInt(1));
             user.setFullName(resultSet.getString(2));
