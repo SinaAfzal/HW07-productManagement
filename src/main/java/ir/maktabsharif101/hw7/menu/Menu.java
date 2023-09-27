@@ -45,6 +45,7 @@ public class Menu {
             System.out.println("3- Exit");
 
             String input = scanner.next();
+            scanner.nextLine();
 
             switch (input) {
                 case "1" -> register();
@@ -52,9 +53,9 @@ public class Menu {
                 case "3" -> homePageIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
-                    scanner.next();
+                    scanner.nextLine();
                     System.out.println("**********  Press any key to continue   **********");
-                    scanner.next();
+                    scanner.nextLine();
                 }
             }
         }
@@ -63,6 +64,7 @@ public class Menu {
     public void register() throws SQLException {
         System.out.print("Enter your full name: ");
         String fullName = scanner.nextLine();
+
 
         System.out.print("Enter your username: ");
         String userName = scanner.nextLine();
@@ -101,7 +103,6 @@ public class Menu {
     public void login() throws SQLException {
         System.out.print("Username: ");
         String userName = scanner.nextLine();
-
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
@@ -132,6 +133,7 @@ public class Menu {
             System.out.println("6- exit");
 
             String input = scanner.next();
+            scanner.nextLine();
 
             switch (input) {
                 case "1" -> userMenu();
@@ -142,8 +144,9 @@ public class Menu {
                 case "6" -> mainMenuIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
-                    scanner.next();
+                    scanner.nextLine();
                     System.out.println("**********  Press any key to continue   **********");
+                    scanner.nextLine();
                 }
             }
         }
@@ -165,15 +168,16 @@ public class Menu {
             System.out.println("2- exit");
 
             String input = scanner.next();
+            scanner.nextLine();
 
             switch (input) {
                 case "1" -> updateUserFullName();
                 case "2" -> userMenuIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
-                    scanner.next();
+                    scanner.nextLine();
                     System.out.println("**********  Press any key to continue   **********");
-                    scanner.next();
+                    scanner.nextLine();
                 }
             }
         }
@@ -206,6 +210,7 @@ public class Menu {
             System.out.println("7- exit");
 
             String input = scanner.next();
+            scanner.nextLine();
 
             switch (input) {
                 case "1" -> createCategory();
@@ -217,9 +222,9 @@ public class Menu {
                 case "7" -> categoryMenuIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
-                    scanner.next();
+                    scanner.nextLine();
                     System.out.println("**********  Press any key to continue   **********");
-                    scanner.next();
+                    scanner.nextLine();
                 }
             }
         }
@@ -230,7 +235,9 @@ public class Menu {
         String categoryName = scanner.nextLine();
 
         System.out.println("Category description: ");
+
         String categoryDescription = scanner.nextLine();
+
 
         Category category = new Category(null, categoryName, categoryDescription);
         categoryService.save(category);
@@ -249,6 +256,7 @@ public class Menu {
     public void updateCategoryDescription() throws SQLException {
         System.out.print("Category ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("New category description: ");
         String newDescription = scanner.nextLine();
@@ -259,6 +267,7 @@ public class Menu {
     public void loadCategory() throws SQLException {
         System.out.print("Enter Category ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         categoryService.load(id);
     }
@@ -271,6 +280,7 @@ public class Menu {
     public void deleteCategory() throws SQLException {
         System.out.print("Enter Category ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         categoryService.delete(id);
     }
@@ -296,6 +306,7 @@ public class Menu {
             System.out.println("7- exit");
 
             String input = scanner.next();
+            scanner.nextLine();
 
             switch (input) {
                 case "1" -> createBrand();
@@ -307,9 +318,9 @@ public class Menu {
                 case "7" -> brandMenuIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
-                    scanner.next();
+                    scanner.nextLine();
                     System.out.println("**********  Press any key to continue   **********");
-                    scanner.next();
+                    scanner.nextLine();
                 }
             }
         }
@@ -351,6 +362,7 @@ public class Menu {
     public void updateBrandDescription() throws SQLException {
         System.out.print("Brand ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("New Brand description: ");
         String newDescription = scanner.nextLine();
@@ -361,6 +373,7 @@ public class Menu {
     public void loadBrand() throws SQLException {
         System.out.print("Enter Brand ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         brandService.load(id);
     }
@@ -373,6 +386,7 @@ public class Menu {
     public void deleteBrand() throws SQLException {
         System.out.print("Enter Brand ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         brandService.delete(id);
     }
@@ -394,27 +408,32 @@ public class Menu {
             System.out.println("2- Update shareholder's name");
             System.out.println("3- Update shareholder's phone number");
             System.out.println("4- Update shareholder's national code");
-            System.out.println("5- Load a shareholder");
-            System.out.println("6- View list of all shareholders");
-            System.out.println("7- Delete a shareholder");
-            System.out.println("8- exit");
+            System.out.println("5- Update shareholder's national code");
+            System.out.println("6- Update shareholder's national code");
+            System.out.println("7- Load a shareholder");
+            System.out.println("8- View list of all shareholders");
+            System.out.println("9- Delete a shareholder");
+            System.out.println("10- exit");
 
             String input = scanner.next();
+            scanner.nextLine();
 
             switch (input) {
                 case "1" -> createShareHolder();
                 case "2" -> updateShareHolderName();
                 case "3" -> updateShareHolderPhoneNumber();
                 case "4" -> updateShareHolderNationalCode();
-                case "5" -> loadShareHolder();
-                case "6" -> listAllShareHolders();
-                case "7" -> deleteShareHolder();
-                case "8" -> shareholderMenuIsActive = false;
+                case "5" -> buyBrandShares();
+                case "6" -> SellBrandShares();
+                case "7" -> loadShareHolder();
+                case "8" -> listAllShareHolders();
+                case "9" -> deleteShareHolder();
+                case "10" -> shareholderMenuIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
-                    scanner.next();
+                    scanner.nextLine();
                     System.out.println("**********  Press any key to continue   **********");
-                    scanner.next();
+                    scanner.nextLine();
                 }
             }
         }
@@ -455,6 +474,7 @@ public class Menu {
     public void updateShareHolderName() throws SQLException {
         System.out.print("Shareholder ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.print("New shareholder name: ");
         String newShareHolderName = scanner.nextLine();
@@ -465,6 +485,7 @@ public class Menu {
     public void updateShareHolderPhoneNumber() throws SQLException {
         System.out.print("Shareholder ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.print("New shareholder phone number: ");
         String newPhoneNumber = null;
@@ -484,6 +505,7 @@ public class Menu {
     public void updateShareHolderNationalCode() throws SQLException {
         System.out.print("Shareholder ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.print("New shareholder national code: ");
         String newNationalCode = null;
@@ -499,10 +521,25 @@ public class Menu {
 
         shareHolderService.updateNationalCode(newNationalCode, id);
     }
+    public void buyBrandShares() throws SQLException {
+        System.out.println("Shareholder's ID: ");
+        int shareHolderID=scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println("*** Select a brand id from the list below ***");
+        brandService.listAllBrands();
+        System.out.println("Brand's ID: ");
+        int brandID=scanner.nextInt();
+        scanner.nextLine();
+        shareHolderService.buyBrandShares(shareHolderID,brandID);
+    }
+
+    public void SellBrandShares(){}
 
     public void loadShareHolder() throws SQLException {
         System.out.print("Enter Shareholder's ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         shareHolderService.load(id);
     }
@@ -515,6 +552,7 @@ public class Menu {
     public void deleteShareHolder() throws SQLException {
         System.out.print("Enter Shareholder's ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         shareHolderService.delete(id);
     }
@@ -541,6 +579,7 @@ public class Menu {
             System.out.println("8- exit");
 
             String input = scanner.next();
+            scanner.nextLine();
 
             switch (input) {
                 case "1" -> createProduct();
@@ -553,9 +592,9 @@ public class Menu {
                 case "8" -> productMenuIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
-                    scanner.next();
+                    scanner.nextLine();
                     System.out.println("**********  Press any key to continue   **********");
-                    scanner.next();
+                    scanner.nextLine();
                 }
             }
         }
@@ -569,11 +608,13 @@ public class Menu {
         categoryService.listAllCategories();
         System.out.print("Enter category ID: ");
         int categoryId = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("*** Select a brand id for the product from the list below ***");
         brandService.listAllBrands();
         System.out.print("Enter brand ID: ");
         int brandId = scanner.nextInt();
+        scanner.nextLine();
 
         Product product = new Product(null, productName, categoryId, brandId);
         productService.save(product);
@@ -582,6 +623,7 @@ public class Menu {
     public void updateProductName() throws SQLException {
         System.out.print("Product ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.print("New product name: ");
         String newProductName = scanner.nextLine();
@@ -592,11 +634,13 @@ public class Menu {
     public void updateProductBrand() throws SQLException {
         System.out.print("Product ID: ");
         int productId = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("*** Select a brand id for the product from the list below ***");
         brandService.listAllBrands();
         System.out.println("New product brand (Enter brand ID): ");
         int newBrandId = scanner.nextInt();
+        scanner.nextLine();
 
         productService.updateProductBrand(productId, newBrandId);
     }
@@ -604,11 +648,13 @@ public class Menu {
     public void updateProductCategory() throws SQLException {
         System.out.print("Product ID: ");
         int productId = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("*** Select a category id for the product from the list below ***");
         categoryService.listAllCategories();
         System.out.println("New product category (Enter category ID): ");
         int newCategoryId = scanner.nextInt();
+        scanner.nextLine();
 
         productService.updateProductCategory(productId, newCategoryId);
     }
@@ -616,6 +662,7 @@ public class Menu {
     public void loadProduct() throws SQLException {
         System.out.print("Enter Product's ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         productService.load(id);
     }
@@ -628,6 +675,7 @@ public class Menu {
     public void deleteProduct() throws SQLException {
         System.out.print("Enter Product's ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         productService.delete(id);
     }

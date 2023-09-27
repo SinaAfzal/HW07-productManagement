@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateProductName method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add deleteProduct method to Menu class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/HW7Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/HW7Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last.edited.regexp": "",
+    "last.edited.regexp": "s.afzalsoltani@gmail.com",
     "last_opened_file_path": "C:/Users/Sina/IdeaProjects/Sina_Afzalsoltani_HW07_Maktab101",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -48,7 +56,10 @@
       "postgresql"
     ],
     "RunConfigurationTargetLRU": [
-      "afa740a8-79a2-4c05-a867-32ebc6613b65/database/\"postgres\"/schema/\"hw7\""
+      "afa740a8-79a2-4c05-a867-32ebc6613b65/database/\"postgres\"/schema/\"hw7\"",
+      "b53fac7c-4eb9-4342-bff7-d6e1db21ec15/database/\"postgres\"/schema/\"hw7\"",
+      "fa851cc0-b9d5-4544-b949-210437d60dc3",
+      "fa851cc0-b9d5-4544-b949-210437d60dc3/database/\"postgres\""
     ]
   }
 }]]></component>
@@ -56,7 +67,7 @@
     <configuration name="SQL.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="afa740a8-79a2-4c05-a867-32ebc6613b65" namespace="database/&quot;postgres&quot;/schema/&quot;hw7&quot;" />
+      <data-source id="fa851cc0-b9d5-4544-b949-210437d60dc3" namespace="database/&quot;postgres&quot;" />
       <method v="2" />
     </configuration>
   </component>
@@ -74,42 +85,9 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="16545000" />
-    </task>
-    <task id="LOCAL-00094" summary="add buyBrandShares method to ShareHolderService class">
-      <created>1695826150066</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1695826150066</updated>
-    </task>
-    <task id="LOCAL-00095" summary="add sellBrandShares method to ShareHolderService class">
-      <created>1695826362053</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1695826362053</updated>
-    </task>
-    <task id="LOCAL-00096" summary="add listAllShareHolders method to ShareHolderService class">
-      <created>1695826544557</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1695826544557</updated>
-    </task>
-    <task id="LOCAL-00097" summary="add delete method to ShareHolderService class">
-      <created>1695826593696</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1695826593696</updated>
-    </task>
-    <task id="LOCAL-00098" summary="create UserService class and add its connection">
-      <created>1695826723279</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1695826723279</updated>
+      <workItem from="1695832469880" duration="18227000" />
+      <workItem from="1695850864616" duration="1631000" />
+      <workItem from="1695852534956" duration="5283000" />
     </task>
     <task id="LOCAL-00099" summary="modify doesExist method in UserRepository class">
       <created>1695827036600</created>
@@ -419,7 +397,42 @@
       <option name="project" value="LOCAL" />
       <updated>1695848872713</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="add updateProductBrand method to Menu class">
+      <created>1695849170723</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1695849170723</updated>
+    </task>
+    <task id="LOCAL-00144" summary="add updateProductCategory method to Menu class">
+      <created>1695849260041</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1695849260041</updated>
+    </task>
+    <task id="LOCAL-00145" summary="add updateProductCategory method to Menu class">
+      <created>1695849311733</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1695849311733</updated>
+    </task>
+    <task id="LOCAL-00146" summary="add listAllProducts method to Menu class">
+      <created>1695849402908</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1695849402908</updated>
+    </task>
+    <task id="LOCAL-00147" summary="add deleteProduct method to Menu class">
+      <created>1695849451931</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1695849451931</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,10 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add loadCategory method to Menu class" />
-    <MESSAGE value="add listAllCategories method to Menu class" />
-    <MESSAGE value="add deleteCategory method to Menu class" />
-    <MESSAGE value="add brandMenu method to Menu class" />
     <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder class" />
     <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder class and anywhere it was used" />
     <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder and ShareHolderRepository classes" />
@@ -462,6 +471,40 @@
     <MESSAGE value="add productMenu method to Menu class" />
     <MESSAGE value="add createProduct method to Menu class" />
     <MESSAGE value="add updateProductName method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updateProductName method to Menu class" />
+    <MESSAGE value="add updateProductBrand method to Menu class" />
+    <MESSAGE value="add loadProduct method to Menu class" />
+    <MESSAGE value="add listAllProducts method to Menu class" />
+    <MESSAGE value="add deleteProduct method to Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add deleteProduct method to Menu class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java</url>
+          <line>49</line>
+          <properties class="ir.maktabsharif101.hw7.repository.UserRepository" method="login">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
