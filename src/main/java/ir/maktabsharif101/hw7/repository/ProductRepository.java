@@ -1,6 +1,7 @@
 package ir.maktabsharif101.hw7.repository;
 
 import ir.maktabsharif101.hw7.entities.Product;
+import org.postgresql.replication.fluent.physical.PhysicalReplicationOptions;
 
 import java.sql.*;
 
@@ -56,6 +57,22 @@ public class ProductRepository {
         preparedStatement.setInt(2,id);
         int result=preparedStatement.executeUpdate();
         return result;
+    }
+
+    public Product load(int id) throws SQLException {
+        String query="SELECT * FROM product WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setInt(1,id);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        Product product=new Product();
+        while (resultSet.next()){
+            product.setId(id);
+            product.setProductName(resultSet.getString(2));
+            product.setCreateDate(resultSet.getTimestamp(3));
+            product.setCategoryId(resultSet.getInt(4));
+            product.setBrandId(resultSet.getInt(5));
+        }
+        return product;
     }
 
 }

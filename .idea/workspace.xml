@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add load method to CategoryRepository class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add delete method to CategoryRepository class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,21 +73,7 @@
       <workItem from="1695704154504" duration="17118000" />
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
-      <workItem from="1695791992794" duration="9240000" />
-    </task>
-    <task id="LOCAL-00002" summary="create class User">
-      <created>1695653034680</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1695653034680</updated>
-    </task>
-    <task id="LOCAL-00003" summary="create class Category">
-      <created>1695653179759</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1695653179759</updated>
+      <workItem from="1695791992794" duration="10237000" />
     </task>
     <task id="LOCAL-00004" summary="create class Product and make fields of Category and User private.">
       <created>1695654855661</created>
@@ -417,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695800921705</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add listAllCategories method to CategoryRepository class">
+      <created>1695801258784</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1695801258784</updated>
+    </task>
+    <task id="LOCAL-00052" summary="add delete method to CategoryRepository class">
+      <created>1695801463275</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1695801463275</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="minor bug fix in updateBrandName method of BrandRepository class" />
-    <MESSAGE value="add updateBrandDescription to BrandRepository class" />
     <MESSAGE value="create ProductRepository class and add its connection" />
     <MESSAGE value="add save method to ProductRepository class" />
     <MESSAGE value="add doesExist method to ProductRepository class" />
@@ -460,6 +459,8 @@
     <MESSAGE value="add delete method to the BrandRepository class" />
     <MESSAGE value="add countAllCategories method to CategoryRepository class" />
     <MESSAGE value="add load method to CategoryRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add load method to CategoryRepository class" />
+    <MESSAGE value="add listAllCategories method to CategoryRepository class" />
+    <MESSAGE value="add delete method to CategoryRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete method to CategoryRepository class" />
   </component>
 </project>
