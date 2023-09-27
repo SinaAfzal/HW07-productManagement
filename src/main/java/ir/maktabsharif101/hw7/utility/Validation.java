@@ -29,6 +29,12 @@ public class Validation {
         return matcher.matches();
     }
 
+    public static boolean isNationalCodeValid(String nationalCode){
+        Pattern pattern=Pattern.compile("^[1-9]\\d{9}$");//10 digit number not starting with zero
+        Matcher matcher=pattern.matcher(nationalCode);
+        return matcher.matches();
+    }
+
 
 
 
