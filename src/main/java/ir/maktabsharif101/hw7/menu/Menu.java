@@ -89,7 +89,7 @@ public class Menu {
                 System.out.println("Enter a valid password!");
             }
         }
-        User user=new User();
+        User user = new User();
         user.setFullName(fullName);
         user.setUserName(userName);
         user.setPassword(password);
@@ -99,21 +99,62 @@ public class Menu {
 
     public void login() throws SQLException {
         System.out.print("Username: ");
-        String userName=scanner.nextLine();
+        String userName = scanner.nextLine();
 
         System.out.print("Password: ");
-        String password=scanner.nextLine();
+        String password = scanner.nextLine();
 
-        User user=userService.login(userName,password);
+        User user = userService.login(userName, password);
 
-        if (user!=null){
+        if (user != null) {
             mainMenu();
         }
     }
 
-    public void mainMenu() throws SQLException{
+    public void mainMenu() throws SQLException {
+        boolean mainMenuIsActive = true;
+        while (mainMenuIsActive) {
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|                HomeWork7-Maktab101               |");
+            System.out.println("|      Product/Brand/Category Management system    |");
+            System.out.println("|           Developed by: Sina Afzalsoltani        |");
+            System.out.println("|                     MAIN MENU                    |");
+            System.out.println("+--------------------------------------------------+");
+            System.out.println();
+            System.out.println();
+            System.out.println("Choose an option from the menu:");
+            System.out.println("1- User operations");
+            System.out.println("2- Category operations");
+            System.out.println("3- Brand operations");
+            System.out.println("4- Shareholder operations");
+            System.out.println("5- Product operations");
+            System.out.println("6- exit");
 
+            String input = scanner.next();
+
+            switch (input) {
+                case "1" -> userMenu();
+                case "2" -> categoryMenu();
+                case "3" -> brandMenu();
+                case "4" -> shareholderMenu();
+                case "5" -> productMenu();
+                case "6" -> mainMenuIsActive = false;
+                default -> {
+                    System.out.println("Invalid input!");
+                    scanner.next();
+                    System.out.println("**********  Press any key to continue   **********");
+                }
+            }
+        }
     }
 
+    public void userMenu() {
+    }
+    public void categoryMenu(){
+    }
+    public void brandMenu(){
+    }
+    public void shareholderMenu(){}
+    public void productMenu(){}
 
 }
