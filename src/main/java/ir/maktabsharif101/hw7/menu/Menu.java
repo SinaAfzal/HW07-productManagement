@@ -503,7 +503,11 @@ public class Menu {
         shareHolderService.updateNationalCode(newNationalCode, id);
     }
 
-    public void loadShareHolder() {
+    public void loadShareHolder() throws SQLException {
+        System.out.print("Enter Shareholder's ID: ");
+        int id = scanner.nextInt();
+
+        shareHolderService.load(id);
     }
 
     public void listAllShareHolders() {
