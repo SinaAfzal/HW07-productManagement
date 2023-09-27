@@ -5,6 +5,7 @@ import ir.maktabsharif101.hw7.repository.*;
 import ir.maktabsharif101.hw7.service.BrandService;
 import ir.maktabsharif101.hw7.service.CategoryService;
 import ir.maktabsharif101.hw7.service.ProductService;
+import ir.maktabsharif101.hw7.service.ShareHolderService;
 
 import java.sql.Connection;
 
@@ -18,6 +19,7 @@ public class ApplicationContext {
     private static final BrandService BRAND_SERVICE;
     private static final CategoryService CATEGORY_SERVICE;
     private static final ProductService PRODUCT_SERVICE;
+    private static final ShareHolderService SHARE_HOLDER_SERVICE;
     static{
         CONNECTION= JDBCConnection.getConnection();
         USER_REPOSITORY=new UserRepository(CONNECTION);
@@ -29,5 +31,6 @@ public class ApplicationContext {
         BRAND_SERVICE=new BrandService(BRAND_REPOSITORY);
         CATEGORY_SERVICE=new CategoryService((CATEGORY_REPOSITORY));
         PRODUCT_SERVICE=new ProductService(PRODUCT_REPOSITORY, CATEGORY_SERVICE, BRAND_SERVICE);
+        SHARE_HOLDER_SERVICE=new ShareHolderService(SHARE_HOLDER_REPOSITORY);
     }
 }
