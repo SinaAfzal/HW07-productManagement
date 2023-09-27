@@ -97,5 +97,23 @@ public class Menu {
         userService.save(user);
     }
 
+    public void login() throws SQLException {
+        System.out.print("Username: ");
+        String userName=scanner.nextLine();
+
+        System.out.print("Password: ");
+        String password=scanner.nextLine();
+
+        User user=userService.login(userName,password);
+
+        if (user!=null){
+            mainMenu();
+        }
+    }
+
+    public void mainMenu() throws SQLException{
+
+    }
+
 
 }
