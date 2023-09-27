@@ -341,7 +341,7 @@ public class Menu {
         brandService.save(brand);
     }
 
-    public void updateBrandName() throws SQLException{
+    public void updateBrandName() throws SQLException {
         System.out.print("Old brand name: ");
         String oldBrandName = scanner.nextLine();
 
@@ -382,8 +382,8 @@ public class Menu {
 
 
     public void shareholderMenu() throws SQLException {
-        boolean shareholderMenuIsActive=true;
-        while (shareholderMenuIsActive){
+        boolean shareholderMenuIsActive = true;
+        while (shareholderMenuIsActive) {
             System.out.println("+--------------------------------------------------+");
             System.out.println("|                HomeWork7-Maktab101               |");
             System.out.println("|      Product/Brand/Category Management system    |");
@@ -454,6 +454,7 @@ public class Menu {
         ShareHolder shareHolder = new ShareHolder(null, shareHolderName, phoneNumber, shareHolderNationalCode, null);
         shareHolderService.save(shareHolder);
     }
+
     public void updateShareHolderName() throws SQLException {
         System.out.print("Shareholder ID: ");
         int id = scanner.nextInt();
@@ -463,11 +464,37 @@ public class Menu {
 
         shareHolderService.updateShareHolderName(newShareHolderName, id);
     }
-    public void updateShareHolderPhoneNumber(){}
-    public void updateShareHolderNationalCode(){}
-    public void loadShareHolder(){}
-    public void listAllShareHolders(){}
-    public void deleteShareHolder(){}
+
+    public void updateShareHolderPhoneNumber() throws SQLException {
+        System.out.print("Shareholder ID: ");
+        int id = scanner.nextInt();
+
+        System.out.print("New shareholder phone number: ");
+        String newPhoneNumber = null;
+        boolean invalidNewPhoneNumber = true;
+        while (invalidNewPhoneNumber) {
+            newPhoneNumber = scanner.nextLine();
+            if (Validation.isPhoneNumberValid(newPhoneNumber)) {
+                invalidNewPhoneNumber = false;
+            } else {
+                System.out.println("Enter a valid phone number!");
+            }
+        }
+
+        shareHolderService.updatePhoneNumber(newPhoneNumber, id);
+    }
+
+    public void updateShareHolderNationalCode() {
+    }
+
+    public void loadShareHolder() {
+    }
+
+    public void listAllShareHolders() {
+    }
+
+    public void deleteShareHolder() {
+    }
 
     public void productMenu() {
     }
