@@ -38,11 +38,11 @@ public class CategoryRepository {
         return resultSet.next();
     }
 
-    public int updateCategoryName(String newCategoryName, int id) throws SQLException {
-        String query = "UPDATE category SET categoryname=? WHERE id=?";
+    public int updateCategoryName(String newCategoryName, String oldCategoryName) throws SQLException {
+        String query = "UPDATE category SET categoryname=? WHERE categoryname=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, newCategoryName);
-        preparedStatement.setInt(2, id);
+        preparedStatement.setString(2, oldCategoryName);
         int result = preparedStatement.executeUpdate();
         return result;
     }
