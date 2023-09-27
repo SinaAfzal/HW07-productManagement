@@ -613,7 +613,11 @@ public class Menu {
         productService.updateProductCategory(productId, newCategoryId);
     }
 
-    public void loadProduct() {
+    public void loadProduct() throws SQLException {
+        System.out.print("Enter Product's ID: ");
+        int id = scanner.nextInt();
+
+        productService.load(id);
     }
 
     public void listAllProducts() {
