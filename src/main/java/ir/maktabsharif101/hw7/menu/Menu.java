@@ -408,8 +408,8 @@ public class Menu {
             System.out.println("2- Update shareholder's name");
             System.out.println("3- Update shareholder's phone number");
             System.out.println("4- Update shareholder's national code");
-            System.out.println("5- Update shareholder's national code");
-            System.out.println("6- Update shareholder's national code");
+            System.out.println("5- Buy brand shares");
+            System.out.println("6- Sell brand shares");
             System.out.println("7- Load a shareholder");
             System.out.println("8- View list of all shareholders");
             System.out.println("9- Delete a shareholder");

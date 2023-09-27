@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add deleteProduct method to Menu class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/HW7Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/HW7Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
-    </list>
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add getter to MENU" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,63 +77,7 @@
       <workItem from="1695811481322" duration="16056000" />
       <workItem from="1695832469880" duration="18227000" />
       <workItem from="1695850864616" duration="1631000" />
-      <workItem from="1695852534956" duration="5283000" />
-    </task>
-    <task id="LOCAL-00099" summary="modify doesExist method in UserRepository class">
-      <created>1695827036600</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1695827036600</updated>
-    </task>
-    <task id="LOCAL-00100" summary="add save method to UserService class">
-      <created>1695827263959</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1695827263959</updated>
-    </task>
-    <task id="LOCAL-00101" summary="add login method to UserService class">
-      <created>1695827502805</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1695827502805</updated>
-    </task>
-    <task id="LOCAL-00102" summary="add updateFullName method to UserService class">
-      <created>1695827643267</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1695827643267</updated>
-    </task>
-    <task id="LOCAL-00103" summary="create Menu class and add its connections">
-      <created>1695833118509</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1695833118510</updated>
-    </task>
-    <task id="LOCAL-00104" summary="add homePage method to Menu class">
-      <created>1695835615910</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1695835615910</updated>
-    </task>
-    <task id="LOCAL-00105" summary="create Validation class">
-      <created>1695836016631</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1695836016631</updated>
-    </task>
-    <task id="LOCAL-00106" summary="add isPasswordValid method to Validation class">
-      <created>1695836573974</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1695836573974</updated>
+      <workItem from="1695852534956" duration="5874000" />
     </task>
     <task id="LOCAL-00107" summary="add isEmailValid method to Validation class">
       <created>1695836885776</created>
@@ -432,7 +366,63 @@
       <option name="project" value="LOCAL" />
       <updated>1695849451931</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="add buyBrandShares method to Menu class+minor bug fixes">
+      <created>1695857887088</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1695857887088</updated>
+    </task>
+    <task id="LOCAL-00149" summary="add sellBrandShares method to Menu class">
+      <created>1695858013223</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858013224</updated>
+    </task>
+    <task id="LOCAL-00150" summary="null pointer bug fix in save method. faulty code was commented.">
+      <created>1695858149805</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858149805</updated>
+    </task>
+    <task id="LOCAL-00151" summary="minor bug fix. password is changed to password_">
+      <created>1695858201094</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858201094</updated>
+    </task>
+    <task id="LOCAL-00152" summary="minor bug fix. password is changed to password_">
+      <created>1695858234815</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858234815</updated>
+    </task>
+    <task id="LOCAL-00153" summary="minor null pointer bug fix">
+      <created>1695858358707</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858358707</updated>
+    </task>
+    <task id="LOCAL-00154" summary="call menu">
+      <created>1695858379575</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858379575</updated>
+    </task>
+    <task id="LOCAL-00155" summary="add getter to MENU">
+      <created>1695858402473</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858402473</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,13 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder class" />
-    <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder class and anywhere it was used" />
-    <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder and ShareHolderRepository classes" />
-    <MESSAGE value="change int[] shareHolderIds to Integer[] shareHolderIds in Brand and BrandRepository classes" />
-    <MESSAGE value="add createBrand method to Menu class" />
-    <MESSAGE value="add updateBrandName method to Menu class" />
-    <MESSAGE value="add updateBrandDescription method to Menu class" />
     <MESSAGE value="add loadBrand method to Menu class" />
     <MESSAGE value="add listAllBrands method to Menu class" />
     <MESSAGE value="add deleteBrand method to Menu class" />
@@ -475,7 +458,14 @@
     <MESSAGE value="add loadProduct method to Menu class" />
     <MESSAGE value="add listAllProducts method to Menu class" />
     <MESSAGE value="add deleteProduct method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add deleteProduct method to Menu class" />
+    <MESSAGE value="add buyBrandShares method to Menu class+minor bug fixes" />
+    <MESSAGE value="add sellBrandShares method to Menu class" />
+    <MESSAGE value="null pointer bug fix in save method. faulty code was commented." />
+    <MESSAGE value="minor bug fix. password is changed to password_" />
+    <MESSAGE value="minor null pointer bug fix" />
+    <MESSAGE value="call menu" />
+    <MESSAGE value="add getter to MENU" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getter to MENU" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
