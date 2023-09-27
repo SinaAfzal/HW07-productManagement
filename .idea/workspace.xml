@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create UserService class and add its connection">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add save method to UserService class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,21 +72,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="15411000" />
-    </task>
-    <task id="LOCAL-00050" summary="add load method to CategoryRepository class">
-      <created>1695800921705</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1695800921705</updated>
-    </task>
-    <task id="LOCAL-00051" summary="add listAllCategories method to CategoryRepository class">
-      <created>1695801258784</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1695801258784</updated>
+      <workItem from="1695811481322" duration="15894000" />
     </task>
     <task id="LOCAL-00052" summary="add delete method to CategoryRepository class">
       <created>1695801463275</created>
@@ -418,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695826723279</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="modify doesExist method in UserRepository class">
+      <created>1695827036600</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1695827036600</updated>
+    </task>
+    <task id="LOCAL-00100" summary="add save method to UserService class">
+      <created>1695827263959</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1695827263959</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,8 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add delete method to CategoryService class" />
-    <MESSAGE value="create ProductService class and add its connection" />
     <MESSAGE value="modify doesExist method in ProductRepository class" />
     <MESSAGE value="Add save method to ProductService class" />
     <MESSAGE value="Add updateProductName method to ProductService class" />
@@ -461,6 +458,8 @@
     <MESSAGE value="add listAllShareHolders method to ShareHolderService class" />
     <MESSAGE value="add delete method to ShareHolderService class" />
     <MESSAGE value="create UserService class and add its connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="create UserService class and add its connection" />
+    <MESSAGE value="modify doesExist method in UserRepository class" />
+    <MESSAGE value="add save method to UserService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add save method to UserService class" />
   </component>
 </project>

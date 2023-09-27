@@ -28,5 +28,16 @@ public class UserService {
         }
     }
 
+    public User login(String username, String password) throws SQLException {
+        User loggedInUser = userRepository.login(username, password);
+        if (loggedInUser != null) {
+            System.out.println("Welcome " + loggedInUser.getFullName() + "!");
+            return loggedInUser;
+        } else {
+            System.out.println("Invalid username or password!");
+            return null;
+        }
+    }
+
 
 }
