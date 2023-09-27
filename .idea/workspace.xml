@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add delete method to CategoryRepository class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add countAllProducts method to ProductRepository class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
     </list>
@@ -73,35 +72,7 @@
       <workItem from="1695704154504" duration="17118000" />
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
-      <workItem from="1695791992794" duration="10237000" />
-    </task>
-    <task id="LOCAL-00004" summary="create class Product and make fields of Category and User private.">
-      <created>1695654855661</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1695654855661</updated>
-    </task>
-    <task id="LOCAL-00005" summary="create class Brand">
-      <created>1695655078267</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1695655078267</updated>
-    </task>
-    <task id="LOCAL-00006" summary="create class ShareHolder">
-      <created>1695655595467</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1695655595467</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add shareholder relation to class Brand">
-      <created>1695655691916</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1695655691916</updated>
+      <workItem from="1695791992794" duration="10949000" />
     </task>
     <task id="LOCAL-00008" summary="create JDBCConnection class">
       <created>1695658752051</created>
@@ -418,7 +389,35 @@
       <option name="project" value="LOCAL" />
       <updated>1695801463275</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add load method to BrandRepository class">
+      <created>1695802267832</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1695802267832</updated>
+    </task>
+    <task id="LOCAL-00054" summary="add countAllProducts method to ProductRepository class">
+      <created>1695802395157</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1695802395157</updated>
+    </task>
+    <task id="LOCAL-00055" summary="add load method to ProductRepository class">
+      <created>1695802453604</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1695802453604</updated>
+    </task>
+    <task id="LOCAL-00056" summary="add countAllProducts method to ProductRepository class">
+      <created>1695802491401</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1695802491401</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,9 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create ProductRepository class and add its connection" />
-    <MESSAGE value="add save method to ProductRepository class" />
-    <MESSAGE value="add doesExist method to ProductRepository class" />
     <MESSAGE value="add updateProductName method to ProductRepository class" />
     <MESSAGE value="add updateCategoryId method to ProductRepository class" />
     <MESSAGE value="add updateBrandId method to ProductRepository class" />
@@ -461,6 +457,9 @@
     <MESSAGE value="add load method to CategoryRepository class" />
     <MESSAGE value="add listAllCategories method to CategoryRepository class" />
     <MESSAGE value="add delete method to CategoryRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete method to CategoryRepository class" />
+    <MESSAGE value="add load method to ProductRepository class" />
+    <MESSAGE value="add load method to ProductRepository class" />
+    <MESSAGE value="add countAllProducts method to ProductRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add countAllProducts method to ProductRepository class" />
   </component>
 </project>
