@@ -454,7 +454,15 @@ public class Menu {
         ShareHolder shareHolder = new ShareHolder(null, shareHolderName, phoneNumber, shareHolderNationalCode, null);
         shareHolderService.save(shareHolder);
     }
-    public void updateShareHolderName(){}
+    public void updateShareHolderName() throws SQLException {
+        System.out.print("Shareholder ID: ");
+        int id = scanner.nextInt();
+
+        System.out.print("New shareholder name: ");
+        String newShareHolderName = scanner.nextLine();
+
+        shareHolderService.updateShareHolderName(newShareHolderName, id);
+    }
     public void updateShareHolderPhoneNumber(){}
     public void updateShareHolderNationalCode(){}
     public void loadShareHolder(){}
