@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add createBrand method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateBrandDescription method to Menu class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,21 +74,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="12281000" />
-    </task>
-    <task id="LOCAL-00078" summary="Add updateProductName method to ProductService class">
-      <created>1695820809375</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1695820809375</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Add updateProductBrand method to ProductService class">
-      <created>1695821525281</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1695821525281</updated>
+      <workItem from="1695832469880" duration="12607000" />
     </task>
     <task id="LOCAL-00080" summary="Add updateProductCategory method to ProductService class">
       <created>1695821628525</created>
@@ -419,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695844588609</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="add updateBrandName method to Menu class">
+      <created>1695844907842</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1695844907842</updated>
+    </task>
+    <task id="LOCAL-00128" summary="add updateBrandDescription method to Menu class">
+      <created>1695845163155</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1695845163155</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,8 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add homePage method to Menu class" />
-    <MESSAGE value="create Validation class" />
     <MESSAGE value="add isPasswordValid method to Validation class" />
     <MESSAGE value="add isEmailValid method to Validation class" />
     <MESSAGE value="add isWebsiteValid method to Validation class" />
@@ -462,6 +460,8 @@
     <MESSAGE value="change int[] brandIds to Integer[] brandIds in ShareHolder and ShareHolderRepository classes" />
     <MESSAGE value="change int[] shareHolderIds to Integer[] shareHolderIds in Brand and BrandRepository classes" />
     <MESSAGE value="add createBrand method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add createBrand method to Menu class" />
+    <MESSAGE value="add updateBrandName method to Menu class" />
+    <MESSAGE value="add updateBrandDescription method to Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateBrandDescription method to Menu class" />
   </component>
 </project>

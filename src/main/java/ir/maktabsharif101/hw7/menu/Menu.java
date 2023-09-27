@@ -361,7 +361,11 @@ public class Menu {
         brandService.updateBrandDescription(newDescription, id);
     }
 
-    public void loadBrand() {
+    public void loadBrand() throws SQLException {
+        System.out.print("Enter Brand ID: ");
+        int id = scanner.nextInt();
+
+        brandService.load(id);
     }
 
     public void listAllBrands() {
