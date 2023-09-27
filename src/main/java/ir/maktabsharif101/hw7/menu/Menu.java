@@ -252,7 +252,12 @@ public class Menu {
 
         categoryService.updateCategoryDescription(newDescription,id);
     }
-    public void loadCategory(){}
+    public void loadCategory() throws SQLException {
+        System.out.print("Enter Category ID: ");
+        int id=scanner.nextInt();
+
+        categoryService.load(id);
+    }
     public void listAllCategories(){}
     public void deleteCategory(){}
 
