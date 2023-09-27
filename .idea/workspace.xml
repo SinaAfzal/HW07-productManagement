@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add sellBrandShares method to ShareHolderService class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create UserService class and add its connection">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,28 +73,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="14933000" />
-    </task>
-    <task id="LOCAL-00047" summary="add listAllBrands method to the BrandRepository class">
-      <created>1695799872312</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1695799872312</updated>
-    </task>
-    <task id="LOCAL-00048" summary="add delete method to the BrandRepository class">
-      <created>1695800151798</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1695800151798</updated>
-    </task>
-    <task id="LOCAL-00049" summary="add countAllCategories method to CategoryRepository class">
-      <created>1695800672822</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1695800672822</updated>
+      <workItem from="1695811481322" duration="15411000" />
     </task>
     <task id="LOCAL-00050" summary="add load method to CategoryRepository class">
       <created>1695800921705</created>
@@ -417,7 +397,28 @@
       <option name="project" value="LOCAL" />
       <updated>1695826362053</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="add listAllShareHolders method to ShareHolderService class">
+      <created>1695826544557</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1695826544557</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add delete method to ShareHolderService class">
+      <created>1695826593696</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1695826593696</updated>
+    </task>
+    <task id="LOCAL-00098" summary="create UserService class and add its connection">
+      <created>1695826723279</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1695826723279</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,9 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updateCategoryDescription method to CategoryService class" />
-    <MESSAGE value="add load method to CategoryService class" />
-    <MESSAGE value="add listAllCategories method to CategoryService class" />
     <MESSAGE value="add delete method to CategoryService class" />
     <MESSAGE value="create ProductService class and add its connection" />
     <MESSAGE value="modify doesExist method in ProductRepository class" />
@@ -460,6 +458,9 @@
     <MESSAGE value="add doesOwn method to ShareHolderRepository class" />
     <MESSAGE value="add buyBrandShares method to ShareHolderService class" />
     <MESSAGE value="add sellBrandShares method to ShareHolderService class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sellBrandShares method to ShareHolderService class" />
+    <MESSAGE value="add listAllShareHolders method to ShareHolderService class" />
+    <MESSAGE value="add delete method to ShareHolderService class" />
+    <MESSAGE value="create UserService class and add its connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="create UserService class and add its connection" />
   </component>
 </project>
