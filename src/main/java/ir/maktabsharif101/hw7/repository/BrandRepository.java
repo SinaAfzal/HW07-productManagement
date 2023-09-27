@@ -22,14 +22,14 @@ public class BrandRepository {
         resultSet.next();
         brand.setId(resultSet.getInt(1));
 
-        String shareholder_brand_TableQuery = "INSERT INTO shareholder_brand (brandid, shareholderid) VALUES (?,?)";
-        PreparedStatement preparedStatement_brand_shareholder = connection.prepareStatement(shareholder_brand_TableQuery);
-        for (int i = 0; i < brand.getShareHolderIds().length; i++) {
-            preparedStatement_brand_shareholder.setInt(1, brand.getId());
-            preparedStatement_brand_shareholder.setInt(2, brand.getShareHolderIds()[i]);
-            preparedStatement_brand_shareholder.addBatch();
-        }
-        preparedStatement_brand_shareholder.executeBatch();
+//        String shareholder_brand_TableQuery = "INSERT INTO shareholder_brand (brandid, shareholderid) VALUES (?,?)";
+//        PreparedStatement preparedStatement_brand_shareholder = connection.prepareStatement(shareholder_brand_TableQuery);
+//        for (int i = 0; i < brand.getShareHolderIds().length; i++) {
+//            preparedStatement_brand_shareholder.setInt(1, brand.getId());
+//            preparedStatement_brand_shareholder.setInt(2, brand.getShareHolderIds()[i]);
+//            preparedStatement_brand_shareholder.addBatch();
+//        }
+//        preparedStatement_brand_shareholder.executeBatch();
         return brand;
     }
 
@@ -40,6 +40,7 @@ public class BrandRepository {
         ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet.next();
     }
+
     public boolean doesExist(int id) throws SQLException {
         String query = "SELECT brandname FROM brand WHERE id=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
@@ -67,7 +68,7 @@ public class BrandRepository {
     }
 
     public int countShareHoldersOfBrand(int id) throws SQLException {
-        String query = "SELECT * FROM shareholder_brand WHERE brandid=?";
+        String query = "SELECT count(*) FROM shareholder_brand WHERE brandid=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
