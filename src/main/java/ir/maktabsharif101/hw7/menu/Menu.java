@@ -519,9 +519,9 @@ public class Menu {
         shareHolderService.delete(id);
     }
 
-    public void productMenu() throws SQLException{
-        boolean productMenuIsActive=true;
-        while (productMenuIsActive){
+    public void productMenu() throws SQLException {
+        boolean productMenuIsActive = true;
+        while (productMenuIsActive) {
             System.out.println("+--------------------------------------------------+");
             System.out.println("|                HomeWork7-Maktab101               |");
             System.out.println("|      Product/Brand/Category Management system    |");
@@ -563,21 +563,22 @@ public class Menu {
 
     public void createProduct() throws SQLException {
         System.out.print("Product's name: ");
-        String productName=scanner.nextLine();
+        String productName = scanner.nextLine();
 
         System.out.println("*** Select a category id for the product from the list below ***");
         categoryService.listAllCategories();
         System.out.print("Enter category ID: ");
-        int categoryId=scanner.nextInt();
+        int categoryId = scanner.nextInt();
 
         System.out.println("*** Select a brand id for the product from the list below ***");
         brandService.listAllBrands();
         System.out.print("Enter brand ID: ");
-        int brandId=scanner.nextInt();
+        int brandId = scanner.nextInt();
 
-        Product product=new Product(null,productName,categoryId,brandId);
+        Product product = new Product(null, productName, categoryId, brandId);
         productService.save(product);
     }
+
     public void updateProductName() throws SQLException {
         System.out.print("Product ID: ");
         int id = scanner.nextInt();
@@ -587,10 +588,29 @@ public class Menu {
 
         productService.updateProductName(newProductName, id);
     }
-    public void updateProductBrand(){}
-    public void updateProductCategory(){}
-    public void loadProduct(){}
-    public void listAllProducts(){}
-    public void deleteProduct(){}
+
+    public void updateProductBrand() throws SQLException {
+        System.out.print("Product ID: ");
+        int productId = scanner.nextInt();
+
+        System.out.println("*** Select a brand id for the product from the list below ***");
+        brandService.listAllBrands();
+        System.out.println("New product brand (Enter brand ID): ");
+        int newBrandId = scanner.nextInt();
+
+        productService.updateProductBrand(productId, newBrandId);
+    }
+
+    public void updateProductCategory() {
+    }
+
+    public void loadProduct() {
+    }
+
+    public void listAllProducts() {
+    }
+
+    public void deleteProduct() {
+    }
 
 }

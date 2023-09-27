@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add productMenu method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateProductName method to Menu class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,21 +74,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="16080000" />
-    </task>
-    <task id="LOCAL-00092" summary="add load method to ShareHolderService class">
-      <created>1695825311895</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1695825311895</updated>
-    </task>
-    <task id="LOCAL-00093" summary="add doesOwn method to ShareHolderRepository class">
-      <created>1695825685662</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1695825685662</updated>
+      <workItem from="1695832469880" duration="16545000" />
     </task>
     <task id="LOCAL-00094" summary="add buyBrandShares method to ShareHolderService class">
       <created>1695826150066</created>
@@ -419,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695848003974</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="add createProduct method to Menu class">
+      <created>1695848713708</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1695848713708</updated>
+    </task>
+    <task id="LOCAL-00142" summary="add updateProductName method to Menu class">
+      <created>1695848872713</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1695848872713</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,8 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updateCategoryName method to Menu class" />
-    <MESSAGE value="add updateCategoryDescription method to Menu class" />
     <MESSAGE value="add loadCategory method to Menu class" />
     <MESSAGE value="add listAllCategories method to Menu class" />
     <MESSAGE value="add deleteCategory method to Menu class" />
@@ -462,6 +460,8 @@
     <MESSAGE value="add listAllShareHolders method to Menu class" />
     <MESSAGE value="add deleteShareHolder method to Menu class" />
     <MESSAGE value="add productMenu method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add productMenu method to Menu class" />
+    <MESSAGE value="add createProduct method to Menu class" />
+    <MESSAGE value="add updateProductName method to Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateProductName method to Menu class" />
   </component>
 </project>
