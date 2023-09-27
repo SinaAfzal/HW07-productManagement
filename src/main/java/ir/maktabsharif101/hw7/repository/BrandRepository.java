@@ -58,5 +58,13 @@ public class BrandRepository {
         int result = preparedStatement.executeUpdate();
         return result;
     }
+    public int countShareHoldersOfBrand(int id) throws SQLException {
+        String query="SELECT * FROM shareholder_brand WHERE brandid=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setInt(1,id);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
 
 }
