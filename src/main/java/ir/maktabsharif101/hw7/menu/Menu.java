@@ -484,7 +484,23 @@ public class Menu {
         shareHolderService.updatePhoneNumber(newPhoneNumber, id);
     }
 
-    public void updateShareHolderNationalCode() {
+    public void updateShareHolderNationalCode() throws SQLException {
+        System.out.print("Shareholder ID: ");
+        int id = scanner.nextInt();
+
+        System.out.print("New shareholder national code: ");
+        String newNationalCode = null;
+        boolean invalidNewNationalCode = true;
+        while (invalidNewNationalCode) {
+            newNationalCode = scanner.nextLine();
+            if (Validation.isNationalCodeValid(newNationalCode)) {
+                invalidNewNationalCode = false;
+            } else {
+                System.out.println("Enter a valid national code!");
+            }
+        }
+
+        shareHolderService.updateNationalCode(newNationalCode, id);
     }
 
     public void loadShareHolder() {
