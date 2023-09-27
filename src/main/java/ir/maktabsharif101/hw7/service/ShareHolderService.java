@@ -42,4 +42,18 @@ public class ShareHolderService {
         }
     }
 
+    public int updatePhoneNumber(String newPhoneNumber, int id) throws SQLException {
+        if (shareHolderRepository.doesExist(id)) {
+            int serverEcho = shareHolderRepository.updatePhoneNumber(newPhoneNumber, id);
+            if (serverEcho > 0)
+                System.out.println("Shareholder's phone number was changed successfully!");
+            else
+                System.out.println("OOPS! Something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println("Invalid shareholder id!");
+            return -1;
+        }
+    }
+
 }

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add sellBrandShares method to ShareHolderRepository class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateShareHolderName method to ShareHolderService class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ShareHolderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,28 +72,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="12622000" />
-    </task>
-    <task id="LOCAL-00038" summary="add updatePhoneNumber method to ShareHolderRepository class">
-      <created>1695736483277</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1695736483277</updated>
-    </task>
-    <task id="LOCAL-00039" summary="add updateNationalCode method to ShareHolderRepository class">
-      <created>1695736723096</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1695736723096</updated>
-    </task>
-    <task id="LOCAL-00040" summary="update save method of Brand class to include the shareholder-brand relationship">
-      <created>1695794213463</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1695794213463</updated>
+      <workItem from="1695811481322" duration="13041000" />
     </task>
     <task id="LOCAL-00041" summary="add 3 methods to the ShareHolderRepository class: countBrandOfShareHolder(int),loadShareHolder(int) and buyBrandShares(int,int)">
       <created>1695796835035</created>
@@ -419,7 +396,28 @@
       <option name="project" value="LOCAL" />
       <updated>1695823550858</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="modify and overload doesExist method in ShareHolderRepository class">
+      <created>1695824258902</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1695824258902</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add save method to ShareHolderService class">
+      <created>1695824279359</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1695824279359</updated>
+    </task>
+    <task id="LOCAL-00089" summary="add updateShareHolderName method to ShareHolderService class">
+      <created>1695824519315</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1695824519315</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,9 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updateBrandDescription method to BrandService class" />
-    <MESSAGE value="add load method to BrandService class" />
-    <MESSAGE value="add listAllBrands method to BrandService class" />
     <MESSAGE value="add delete method to BrandService class" />
     <MESSAGE value="create CategoryService class and add its connection" />
     <MESSAGE value="modify and overload doesExist method in CategoryRepository" />
@@ -462,6 +457,9 @@
     <MESSAGE value="Add delete method to ProductService class" />
     <MESSAGE value="create ShareHolderService class and add its connection" />
     <MESSAGE value="add sellBrandShares method to ShareHolderRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sellBrandShares method to ShareHolderRepository class" />
+    <MESSAGE value="modify and overload doesExist method in ShareHolderRepository class" />
+    <MESSAGE value="add save method to ShareHolderService class" />
+    <MESSAGE value="add updateShareHolderName method to ShareHolderService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateShareHolderName method to ShareHolderService class" />
   </component>
 </project>
