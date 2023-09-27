@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="overload doesExist method in BrandRepository and slight modification of the related methods in BrandRepository and BrandService">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateBrandName method to BrandService class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,14 +72,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="2653000" />
-    </task>
-    <task id="LOCAL-00012" summary="create tables using SQL.sql">
-      <created>1695706075068</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1695706075068</updated>
+      <workItem from="1695811481322" duration="3050000" />
     </task>
     <task id="LOCAL-00013" summary="add save method to UserRepository class">
       <created>1695706927562</created>
@@ -417,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695813874292</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="add updateBrandName method to BrandService class">
+      <created>1695814261045</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1695814261045</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add save method to ShareHolderRepository class" />
     <MESSAGE value="add doesExist method to ShareHolderRepository class" />
     <MESSAGE value="add updateShareHolderName method to ShareHolderRepository class" />
     <MESSAGE value="add updatePhoneNumber method to ShareHolderRepository class" />
@@ -460,6 +459,7 @@
     <MESSAGE value="create BrandService class and add its connections" />
     <MESSAGE value="add save method to BrandService class" />
     <MESSAGE value="overload doesExist method in BrandRepository and slight modification of the related methods in BrandRepository and BrandService" />
-    <option name="LAST_COMMIT_MESSAGE" value="overload doesExist method in BrandRepository and slight modification of the related methods in BrandRepository and BrandService" />
+    <MESSAGE value="add updateBrandName method to BrandService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateBrandName method to BrandService class" />
   </component>
 </project>

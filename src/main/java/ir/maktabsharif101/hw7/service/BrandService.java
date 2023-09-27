@@ -42,6 +42,20 @@ public class BrandService {
         }
     }
 
+    public int updateBrandDescription(String newBrandDescription,int brandID) throws SQLException {
+        if (brandRepository.doesExist(brandID)){
+            int serverEcho=brandRepository.updateBrandDescription(newBrandDescription,brandID);
+            if (serverEcho>0)
+                System.out.println("Brand description is updated successfully!");
+            else
+                System.out.println("OOPS! something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println("Brand ID is not valid!");
+            return -1;
+        }
+    }
+
 
 
 
