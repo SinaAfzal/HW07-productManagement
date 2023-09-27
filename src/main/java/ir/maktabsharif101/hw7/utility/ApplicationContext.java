@@ -2,6 +2,7 @@ package ir.maktabsharif101.hw7.utility;
 
 import ir.maktabsharif101.hw7.connection.JDBCConnection;
 import ir.maktabsharif101.hw7.repository.*;
+import ir.maktabsharif101.hw7.service.BrandService;
 
 import java.sql.Connection;
 
@@ -12,6 +13,7 @@ public class ApplicationContext {
     private static final BrandRepository BRAND_REPOSITORY;
     private static final ProductRepository PRODUCT_REPOSITORY;
     private static final ShareHolderRepository SHARE_HOLDER_REPOSITORY;
+    private static final BrandService BRAND_SERVICE;
     static{
         CONNECTION= JDBCConnection.getConnection();
         USER_REPOSITORY=new UserRepository(CONNECTION);
@@ -19,5 +21,7 @@ public class ApplicationContext {
         BRAND_REPOSITORY=new BrandRepository(CONNECTION);
         PRODUCT_REPOSITORY=new ProductRepository(CONNECTION);
         SHARE_HOLDER_REPOSITORY=new ShareHolderRepository(CONNECTION);
+
+        BRAND_SERVICE=new BrandService(BRAND_REPOSITORY);
     }
 }
