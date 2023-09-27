@@ -120,4 +120,17 @@ public class ShareHolderService {
         }
     }
 
+    public void sellBrandShares(int shareHolderID, int brandID) throws SQLException {
+        if (shareHolderRepository.doesExist(shareHolderID)) {
+            if (!shareHolderRepository.doesOwn(shareHolderID, brandID)) {
+                System.out.println("The shareholder does not own such share!");
+            } else {
+                shareHolderRepository.sellBrandShares(shareHolderID, brandID);
+                System.out.println("The share is sold successfully!");
+            }
+        } else {
+            System.out.println("Invalid shareholder ID!");
+        }
+    }
+
 }
