@@ -56,4 +56,18 @@ public class ShareHolderService {
         }
     }
 
+    public int updateNationalCode(String newNationalCode, int id) throws SQLException {
+        if (shareHolderRepository.doesExist(id)) {
+            int serverEcho = shareHolderRepository.updateNationalCode(newNationalCode, id);
+            if (serverEcho > 0)
+                System.out.println("Shareholder's national code was changed successfully!");
+            else
+                System.out.println("OOPS! Something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println("Invalid shareholder id!");
+            return -1;
+        }
+    }
+
 }
