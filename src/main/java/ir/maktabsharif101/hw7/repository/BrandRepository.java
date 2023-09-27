@@ -93,7 +93,7 @@ public class BrandRepository {
             PreparedStatement preparedStatementFindShareHolders = connection.prepareStatement(queryFindShareHolders);
             preparedStatementFindShareHolders.setInt(1, id);
             ResultSet resultSetFoundShareholders = preparedStatementFindShareHolders.executeQuery();
-            int[] shareHolderIDs = new int[NumberOfShareHolders];
+            Integer[] shareHolderIDs = new Integer[NumberOfShareHolders];
             int counter = 0;
             while (resultSetFoundShareholders.next()) {
                 shareHolderIDs[counter++] = resultSetFoundShareholders.getInt("shareholderid");
