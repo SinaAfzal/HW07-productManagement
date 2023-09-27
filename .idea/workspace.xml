@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create Menu class and add its connections">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add isNationalCodeValid method to Validation class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sina/IdeaProjects/Sina_Afzalsoltani_HW07_Maktab101&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last.edited.regexp": "",
+    "last_opened_file_path": "C:/Users/Sina/IdeaProjects/Sina_Afzalsoltani_HW07_Maktab101",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;afa740a8-79a2-4c05-a867-32ebc6613b65/database/\&quot;postgres\&quot;/schema/\&quot;hw7\&quot;&quot;
+    "RunConfigurationTargetLRU": [
+      "afa740a8-79a2-4c05-a867-32ebc6613b65/database/\"postgres\"/schema/\"hw7\""
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="SQL.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" />
@@ -75,56 +75,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="2933000" />
-    </task>
-    <task id="LOCAL-00055" summary="add load method to ProductRepository class">
-      <created>1695802453604</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1695802453604</updated>
-    </task>
-    <task id="LOCAL-00056" summary="add countAllProducts method to ProductRepository class">
-      <created>1695802491401</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1695802491401</updated>
-    </task>
-    <task id="LOCAL-00057" summary="add listAllProducts method to ProductRepository class">
-      <created>1695802999149</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1695802999149</updated>
-    </task>
-    <task id="LOCAL-00058" summary="create BrandService class and add its connections">
-      <created>1695803175847</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1695803175847</updated>
-    </task>
-    <task id="LOCAL-00059" summary="add save method to BrandService class">
-      <created>1695812291501</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1695812291501</updated>
-    </task>
-    <task id="LOCAL-00060" summary="overload doesExist method in BrandRepository and slight modification of the related methods in BrandRepository and BrandService">
-      <created>1695813874292</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1695813874292</updated>
-    </task>
-    <task id="LOCAL-00061" summary="add updateBrandName method to BrandService class">
-      <created>1695814261045</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1695814261045</updated>
+      <workItem from="1695832469880" duration="5812000" />
     </task>
     <task id="LOCAL-00062" summary="add updateBrandDescription method to BrandService class">
       <created>1695814649494</created>
@@ -420,7 +371,56 @@
       <option name="project" value="LOCAL" />
       <updated>1695833118510</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="add homePage method to Menu class">
+      <created>1695835615910</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1695835615910</updated>
+    </task>
+    <task id="LOCAL-00105" summary="create Validation class">
+      <created>1695836016631</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1695836016631</updated>
+    </task>
+    <task id="LOCAL-00106" summary="add isPasswordValid method to Validation class">
+      <created>1695836573974</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1695836573974</updated>
+    </task>
+    <task id="LOCAL-00107" summary="add isEmailValid method to Validation class">
+      <created>1695836885776</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1695836885776</updated>
+    </task>
+    <task id="LOCAL-00108" summary="add isWebsiteValid method to Validation class">
+      <created>1695837295855</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1695837295855</updated>
+    </task>
+    <task id="LOCAL-00109" summary="add isPhoneNumberValid method to Validation class">
+      <created>1695837686940</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1695837686940</updated>
+    </task>
+    <task id="LOCAL-00110" summary="add isNationalCodeValid method to Validation class">
+      <created>1695837832838</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1695837832838</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,13 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add updateProductBrand method to ProductService class" />
-    <MESSAGE value="Add updateProductCategory method to ProductService class" />
-    <MESSAGE value="Add delete method to ProductRepository class" />
-    <MESSAGE value="Add load method to ProductService class" />
-    <MESSAGE value="Add listAllProducts method to ProductService class" />
-    <MESSAGE value="Add delete method to ProductService class" />
-    <MESSAGE value="create ShareHolderService class and add its connection" />
     <MESSAGE value="add sellBrandShares method to ShareHolderRepository class" />
     <MESSAGE value="modify and overload doesExist method in ShareHolderRepository class" />
     <MESSAGE value="add save method to ShareHolderService class" />
@@ -463,6 +456,13 @@
     <MESSAGE value="add login method to UserService class" />
     <MESSAGE value="add updateFullName method to UserService class" />
     <MESSAGE value="create Menu class and add its connections" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Menu class and add its connections" />
+    <MESSAGE value="add homePage method to Menu class" />
+    <MESSAGE value="create Validation class" />
+    <MESSAGE value="add isPasswordValid method to Validation class" />
+    <MESSAGE value="add isEmailValid method to Validation class" />
+    <MESSAGE value="add isWebsiteValid method to Validation class" />
+    <MESSAGE value="add isPhoneNumberValid method to Validation class" />
+    <MESSAGE value="add isNationalCodeValid method to Validation class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add isNationalCodeValid method to Validation class" />
   </component>
 </project>

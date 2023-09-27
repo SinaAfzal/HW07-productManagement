@@ -1,6 +1,8 @@
 package ir.maktabsharif101.hw7.menu;
 
+import ir.maktabsharif101.hw7.entities.User;
 import ir.maktabsharif101.hw7.service.*;
+import ir.maktabsharif101.hw7.utility.Validation;
 
 import javax.sound.midi.SysexMessage;
 import java.sql.SQLException;
@@ -42,12 +44,12 @@ public class Menu {
             System.out.println("2- Sign in");
             System.out.println("3- Exit");
 
-            String input=scanner.next();
+            String input = scanner.next();
 
-            switch (input){
-                case "1"-> register();
-                case "2"-> login();
-                case "3"-> homePageIsActive=false;
+            switch (input) {
+                case "1" -> register();
+                case "2" -> login();
+                case "3" -> homePageIsActive = false;
                 default -> {
                     System.out.println("Invalid input!");
                     scanner.next();
@@ -57,7 +59,43 @@ public class Menu {
         }
     }
 
+    public void register() throws SQLException {
+        System.out.print("Enter your full name: ");
+        String fullName = scanner.nextLine();
 
+        System.out.print("Enter your username: ");
+        String userName = scanner.nextLine();
+
+        System.out.print("Enter your Email: ");
+        String email = null;
+        boolean invalidEmail = true;
+        while (invalidEmail) {
+            email = scanner.nextLine();
+            if (Validation.isEmailValid(email)) {
+                invalidEmail = false;
+            } else {
+                System.out.println("Enter a valid email!");
+            }
+        }
+
+        System.out.print("Enter your password: ");
+        String password = null;
+        boolean invalidPassword = true;
+        while (invalidPassword) {
+            password = scanner.nextLine();
+            if (Validation.isPasswordValid(password)) {
+                invalidPassword = false;
+            } else {
+                System.out.println("Enter a valid password!");
+            }
+        }
+        User user=new User();
+        user.setFullName(fullName);
+        user.setUserName(userName);
+        user.setPassword(password);
+        user.setEmail(email);
+        userService.save(user);
+    }
 
 
 }
