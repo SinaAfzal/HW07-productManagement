@@ -92,4 +92,13 @@ public class CategoryService {
         return categories;
     }
 
+    public void delete(int id) throws SQLException{
+        if (categoryRepository.doesExist(id)) {
+            categoryRepository.delete(id);
+            System.out.println("Category was deleted!");
+        } else {
+            System.out.println("Invalid category ID!");
+        }
+    }
+
 }
