@@ -25,11 +25,24 @@ public class UserRepository {
         return user;
     }
 
-    public boolean doesExist(User user) throws SQLException {
-        String query = "SELECT username FROM users WHERE username=? OR email ILIKE ?";
+    public boolean mailDoesExist(String email) throws SQLException {
+        String query = "SELECT username FROM users WHERE email ILIKE ?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(1, user.getUserName());
-        preparedStatement.setString(2, user.getEmail());
+        preparedStatement.setString(2, email);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+    public boolean doesExist(String username) throws SQLException {
+        String query = "SELECT username FROM users WHERE username=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setString(1, username);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+    public boolean doesExist(int id) throws SQLException {
+        String query = "SELECT username FROM users WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet.next();
     }
