@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create CategoryService class and add its connection">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="modify updateCategoryName method in CategoryRepository">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/CategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,28 +72,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="5882000" />
-    </task>
-    <task id="LOCAL-00018" summary="add save method to CategoryRepository class">
-      <created>1695712600036</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1695712600036</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add doesExist method to CategoryRepository class">
-      <created>1695713964173</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1695713964173</updated>
-    </task>
-    <task id="LOCAL-00020" summary="add updateCategoryName method to CategoryRepository class">
-      <created>1695714596070</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1695714596070</updated>
+      <workItem from="1695811481322" duration="6207000" />
     </task>
     <task id="LOCAL-00021" summary="add updateCategoryDescription method to CategoryRepository class">
       <created>1695714792569</created>
@@ -418,7 +396,28 @@
       <option name="project" value="LOCAL" />
       <updated>1695816999656</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="modify and overload doesExist method in CategoryRepository">
+      <created>1695817512653</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1695817512653</updated>
+    </task>
+    <task id="LOCAL-00068" summary="add save method to CategoryService class">
+      <created>1695817528700</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1695817528700</updated>
+    </task>
+    <task id="LOCAL-00069" summary="modify updateCategoryName method in CategoryRepository">
+      <created>1695817661738</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1695817661738</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,9 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add 3 methods to the ShareHolderRepository class: countBrandOfShareHolder(int),loadShareHolder(int) and buyBrandShares(int,int)" />
-    <MESSAGE value="add 2 methods to the ShareHolderRepository class: countAllShareHolders() and listAllShareHolders()" />
-    <MESSAGE value="add delete method to the ShareHolderRepository class" />
     <MESSAGE value="add countShareHoldersOfBrand to the BrandRepository class" />
     <MESSAGE value="add load method to the BrandRepository class" />
     <MESSAGE value="add countAllBrands method to the BrandRepository class" />
@@ -461,6 +457,9 @@
     <MESSAGE value="add listAllBrands method to BrandService class" />
     <MESSAGE value="add delete method to BrandService class" />
     <MESSAGE value="create CategoryService class and add its connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="create CategoryService class and add its connection" />
+    <MESSAGE value="modify and overload doesExist method in CategoryRepository" />
+    <MESSAGE value="add save method to CategoryService class" />
+    <MESSAGE value="modify updateCategoryName method in CategoryRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify updateCategoryName method in CategoryRepository" />
   </component>
 </project>

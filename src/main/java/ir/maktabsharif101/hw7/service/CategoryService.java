@@ -11,19 +11,34 @@ public class CategoryService {
     public CategoryService(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
+
     public Category save(Category category) throws SQLException {
-        if (categoryRepository.doesExist(category.getCategoryName())){
+        if (categoryRepository.doesExist(category.getCategoryName())) {
             System.out.println("The category name already exists on the database!");
             return null;
-        }else{
-            Category returnedCategory=categoryRepository.save(category);
-            if (returnedCategory!=null){
-                System.out.println("ID="+returnedCategory.getId()+" is assigned to the category and it is stored on database successfully!");
+        } else {
+            Category returnedCategory = categoryRepository.save(category);
+            if (returnedCategory != null) {
+                System.out.println("ID=" + returnedCategory.getId() + " is assigned to the category and it is stored on database successfully!");
                 return returnedCategory;
-            }else {
+            } else {
                 System.out.println("OOPS! Something went wrong!");
                 return null;
             }
+        }
+    }
+
+    public int updateCategoryName(String newCategoryName, String oldCategoryName) throws SQLException {
+        if (categoryRepository.doesExist(oldCategoryName)) {
+            int serverEcho = categoryRepository.updateCategoryName(newCategoryName, oldCategoryName);
+            if (serverEcho > 0)
+                System.out.println("Category name was changed from " + oldCategoryName + " to " + newCategoryName + " successfully!");
+            else
+                System.out.println("OOPS! something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println(oldCategoryName + " was not found on the database!");
+            return -1;
         }
     }
 
