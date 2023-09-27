@@ -262,7 +262,12 @@ public class Menu {
         System.out.println();
         categoryService.listAllCategories();
     }
-    public void deleteCategory(){}
+    public void deleteCategory() throws SQLException {
+        System.out.print("Enter Category ID: ");
+        int id=scanner.nextInt();
+
+        categoryService.delete(id);
+    }
 
     public void brandMenu(){
     }
