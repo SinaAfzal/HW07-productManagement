@@ -1,5 +1,6 @@
 package ir.maktabsharif101.hw7.menu;
 
+import ir.maktabsharif101.hw7.entities.Category;
 import ir.maktabsharif101.hw7.entities.User;
 import ir.maktabsharif101.hw7.service.*;
 import ir.maktabsharif101.hw7.utility.Validation;
@@ -184,7 +185,7 @@ public class Menu {
         userService.updateFullName(newFullName,user.getId());
     }
 
-    public void categoryMenu(){
+    public void categoryMenu() throws SQLException {
         boolean categoryMenuIsActive=true;
         while (categoryMenuIsActive){
             System.out.println("+--------------------------------------------------+");
@@ -223,7 +224,16 @@ public class Menu {
         }
     }
 
-    public void createCategory(){}
+    public void createCategory() throws SQLException {
+        System.out.println("Category name: ");
+        String categoryName=scanner.nextLine();
+
+        System.out.println("Category description: ");
+        String categoryDescription=scanner.nextLine();
+
+        Category category=new Category(null,categoryName,categoryDescription);
+        categoryService.save(category);
+    }
     public void updateCategoryName(){}
     public void updateCategoryDescription(){}
     public void loadCategory(){}
