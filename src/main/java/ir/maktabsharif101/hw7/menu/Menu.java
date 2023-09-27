@@ -185,7 +185,51 @@ public class Menu {
     }
 
     public void categoryMenu(){
+        boolean categoryMenuIsActive=true;
+        while (categoryMenuIsActive){
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|                HomeWork7-Maktab101               |");
+            System.out.println("|      Product/Brand/Category Management system    |");
+            System.out.println("|           Developed by: Sina Afzalsoltani        |");
+            System.out.println("|                   CATEGORY MENU                  |");
+            System.out.println("+--------------------------------------------------+");
+            System.out.println();
+            System.out.println();
+            System.out.println("Choose an option from the menu:");
+            System.out.println("1- Create new category");
+            System.out.println("2- Update category name");
+            System.out.println("3- Update category description");
+            System.out.println("4- Load a category");
+            System.out.println("5- View list of all categories");
+            System.out.println("6- Delete a category");
+            System.out.println("7- exit");
+
+            String input = scanner.next();
+
+            switch (input) {
+                case "1" -> createCategory();
+                case "2" -> updateCategoryName();
+                case "3" -> updateCategoryDescription();
+                case "4" -> loadCategory();
+                case "5" -> listAllCategories();
+                case "6" -> deleteCategory();
+                case "7" -> categoryMenuIsActive = false;
+                default -> {
+                    System.out.println("Invalid input!");
+                    scanner.next();
+                    System.out.println("**********  Press any key to continue   **********");
+                }
+            }
+        }
     }
+
+    public void createCategory(){}
+    public void updateCategoryName(){}
+    public void updateCategoryDescription(){}
+    public void loadCategory(){}
+    public void listAllCategories(){}
+    public void deleteCategory(){}
+
     public void brandMenu(){
     }
     public void shareholderMenu(){}

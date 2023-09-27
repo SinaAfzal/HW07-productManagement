@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add userMenu method to Menu class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateUserFullName method to Menu class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,14 +74,7 @@
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
       <workItem from="1695811481322" duration="16056000" />
-      <workItem from="1695832469880" duration="7863000" />
-    </task>
-    <task id="LOCAL-00066" summary="create CategoryService class and add its connection">
-      <created>1695816999656</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1695816999656</updated>
+      <workItem from="1695832469880" duration="8587000" />
     </task>
     <task id="LOCAL-00067" summary="modify and overload doesExist method in CategoryRepository">
       <created>1695817512653</created>
@@ -419,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695839945061</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="add updateUserFullName method to Menu class">
+      <created>1695840440851</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1695840440851</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updatePhoneNumber method to ShareHolderService class" />
     <MESSAGE value="add updateNationalCode method to ShareHolderService class" />
     <MESSAGE value="add load method to ShareHolderService class" />
     <MESSAGE value="add doesOwn method to ShareHolderRepository class" />
@@ -462,6 +461,7 @@
     <MESSAGE value="add login method to Menu class" />
     <MESSAGE value="add mainMenu method to Menu class" />
     <MESSAGE value="add userMenu method to Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add userMenu method to Menu class" />
+    <MESSAGE value="add updateUserFullName method to Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateUserFullName method to Menu class" />
   </component>
 </project>
