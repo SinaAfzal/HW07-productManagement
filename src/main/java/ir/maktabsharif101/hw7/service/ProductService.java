@@ -39,13 +39,29 @@ public class ProductService {
             if (serverEcho > 0)
                 System.out.println("Product name was changed successfully!");
             else
-                System.out.println("OOPS! something went wrong!");
+                System.out.println("OOPS! Something went wrong!");
             return serverEcho;
         } else {
             System.out.println("Invalid product id!");
             return -1;
         }
     }
+    public int updateProductBrand(int productID,int newBrandID) throws SQLException {
+        if (productRepository.doesExist(productID)){
+            int serverEcho=productRepository.updateBrandId(newBrandID,productID);
+            if (serverEcho>0)
+                System.out.println("Product brand was changed successfully!");
+            else
+                System.out.println("OOPS! Something went wrong!");
+            return serverEcho;
+        }else {
+            System.out.println("Invalid product id!");
+            return -1;
+        }
+
+    }
+
+
 
 
 }
