@@ -28,6 +28,19 @@ public class BrandService {
         }
     }
 
+    public int updateBrandName(String newBrandName,String OldBrandName) throws SQLException {
+        if (brandRepository.doesExist(OldBrandName)){
+            int serverEcho=brandRepository.updateBrandName(newBrandName,OldBrandName);
+            if (serverEcho>0)
+                System.out.println("Brand name was changed from "+OldBrandName+" to "+newBrandName+" successfully!");
+            else
+                System.out.println("OOPS! something went wrong!");
+            return serverEcho;
+        } else{
+            System.out.println(OldBrandName+" was not found on the database!");
+            return -1;
+        }
+    }
 
 
 
