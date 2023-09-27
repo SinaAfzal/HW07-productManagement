@@ -1,6 +1,5 @@
 package ir.maktabsharif101.hw7.service;
 
-import ir.maktabsharif101.hw7.entities.Brand;
 import ir.maktabsharif101.hw7.entities.Category;
 import ir.maktabsharif101.hw7.repository.CategoryRepository;
 
