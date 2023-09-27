@@ -23,10 +23,17 @@ public class CategoryRepository {
         return category;
     }
 
-    public boolean doesExist(Category category) throws SQLException {
+    public boolean doesExist(String categoryName) throws SQLException {
         String query = "SELECT categoryname FROM category WHERE categoryname=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(1, category.getCategoryName());
+        preparedStatement.setString(1, categoryName);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+    public boolean doesExist(int id) throws SQLException {
+        String query = "SELECT categoryname FROM category WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet.next();
     }
