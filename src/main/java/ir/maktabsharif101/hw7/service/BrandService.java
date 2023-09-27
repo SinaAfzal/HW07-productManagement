@@ -28,24 +28,24 @@ public class BrandService {
         }
     }
 
-    public int updateBrandName(String newBrandName,String OldBrandName) throws SQLException {
-        if (brandRepository.doesExist(OldBrandName)){
-            int serverEcho=brandRepository.updateBrandName(newBrandName,OldBrandName);
-            if (serverEcho>0)
-                System.out.println("Brand name was changed from "+OldBrandName+" to "+newBrandName+" successfully!");
+    public int updateBrandName(String newBrandName, String OldBrandName) throws SQLException {
+        if (brandRepository.doesExist(OldBrandName)) {
+            int serverEcho = brandRepository.updateBrandName(newBrandName, OldBrandName);
+            if (serverEcho > 0)
+                System.out.println("Brand name was changed from " + OldBrandName + " to " + newBrandName + " successfully!");
             else
                 System.out.println("OOPS! something went wrong!");
             return serverEcho;
-        } else{
-            System.out.println(OldBrandName+" was not found on the database!");
+        } else {
+            System.out.println(OldBrandName + " was not found on the database!");
             return -1;
         }
     }
 
-    public int updateBrandDescription(String newBrandDescription,int brandID) throws SQLException {
-        if (brandRepository.doesExist(brandID)){
-            int serverEcho=brandRepository.updateBrandDescription(newBrandDescription,brandID);
-            if (serverEcho>0)
+    public int updateBrandDescription(String newBrandDescription, int brandID) throws SQLException {
+        if (brandRepository.doesExist(brandID)) {
+            int serverEcho = brandRepository.updateBrandDescription(newBrandDescription, brandID);
+            if (serverEcho > 0)
                 System.out.println("Brand description is updated successfully!");
             else
                 System.out.println("OOPS! something went wrong!");
@@ -56,7 +56,34 @@ public class BrandService {
         }
     }
 
-
+    public Brand load(int id) throws SQLException {
+        if (brandRepository.doesExist(id)) {
+            Brand loadedBrand = brandRepository.load(id);
+            if (loadedBrand == null)
+                System.out.println("OOPS! Brand was found but could not be loaded!");
+            else {
+                System.out.println("Brand with ID=" + id + " is loaded successfully!:");
+                System.out.println("   -Brand name: " + loadedBrand.getBrandName());
+                System.out.println("   -Brand website: " + loadedBrand.getWebsite());
+                System.out.println("   -Brand description: " + loadedBrand.getDescription());
+                System.out.println("   -Brand shareholders: ");
+                if (loadedBrand.getShareHolderIds().length > 0) {
+                    for (int i = 0; i < loadedBrand.getShareHolderIds().length; i++) {
+                        if (i != loadedBrand.getShareHolderIds().length - 1)
+                            System.out.print(loadedBrand.getShareHolderIds()[i] + ",");
+                        else
+                            System.out.print(loadedBrand.getShareHolderIds()[i]);
+                    }
+                } else {
+                    System.out.print("-");
+                }
+            }
+            return loadedBrand;
+        } else {
+            System.out.println("Invalid brand id!");
+            return null;
+        }
+    }
 
 
 }
