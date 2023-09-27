@@ -23,6 +23,13 @@ public class Validation {
         return matcher.matches();
     }
 
+    public static boolean isPhoneNumberValid(String phoneNumber){
+        Pattern pattern=Pattern.compile("^[1-9]\\d{6,9}$");//7 to 10 digit number not starting with zero
+        Matcher matcher=pattern.matcher(phoneNumber);
+        return matcher.matches();
+    }
+
+
 
 
 
