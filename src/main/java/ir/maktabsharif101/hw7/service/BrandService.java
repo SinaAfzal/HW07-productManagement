@@ -85,5 +85,21 @@ public class BrandService {
         }
     }
 
+    public Brand[] listAllBrands() throws SQLException {
+        Brand[] brands = brandRepository.listAllBrands();
+        if (brands.length > 0) {
+            System.out.println("# List of available brands on database: ");
+            System.out.println("-------------------------");
+            System.out.println("     ID    |   Brand name");
+            System.out.println("-------------------------");
 
+            for (int i = 0; i < brands.length; i++) {
+                System.out.println("|     " + brands[i].getId() + "    " + "    " + brands[i].getBrandName());
+            }
+            System.out.println("-------------------------");
+        } else {
+            System.out.println("No brands available!");
+        }
+        return brands;
+    }
 }
