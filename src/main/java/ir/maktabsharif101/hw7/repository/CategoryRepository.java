@@ -83,5 +83,10 @@ public class CategoryRepository {
         return categories;
     }
 
-
+    public void delete(int id) throws SQLException {
+        String query="DELETE FROM category WHERE id=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        preparedStatement.setInt(1,id);
+        preparedStatement.executeUpdate();
+    }
 }
