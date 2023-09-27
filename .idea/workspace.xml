@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create ProductService class and add its connection">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="Add save method to ProductService class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/utility/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,21 +73,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="7976000" />
-    </task>
-    <task id="LOCAL-00027" summary="add updateBrandDescription to BrandRepository class">
-      <created>1695716584953</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1695716584953</updated>
-    </task>
-    <task id="LOCAL-00028" summary="create ProductRepository class and add its connection">
-      <created>1695717077094</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1695717077094</updated>
+      <workItem from="1695811481322" duration="9202000" />
     </task>
     <task id="LOCAL-00029" summary="add save method to ProductRepository class">
       <created>1695723982307</created>
@@ -420,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695818825250</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="modify doesExist method in ProductRepository class">
+      <created>1695819596153</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1695819596153</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Add save method to ProductService class">
+      <created>1695819868066</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1695819868066</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,8 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add load method to CategoryRepository class" />
-    <MESSAGE value="add listAllCategories method to CategoryRepository class" />
     <MESSAGE value="add delete method to CategoryRepository class" />
     <MESSAGE value="add load method to ProductRepository class" />
     <MESSAGE value="add load method to ProductRepository class" />
@@ -463,6 +459,8 @@
     <MESSAGE value="add listAllCategories method to CategoryService class" />
     <MESSAGE value="add delete method to CategoryService class" />
     <MESSAGE value="create ProductService class and add its connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="create ProductService class and add its connection" />
+    <MESSAGE value="modify doesExist method in ProductRepository class" />
+    <MESSAGE value="Add save method to ProductService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add save method to ProductService class" />
   </component>
 </project>

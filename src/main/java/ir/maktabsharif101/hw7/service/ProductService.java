@@ -33,5 +33,19 @@ public class ProductService {
         }
     }
 
+    public int updateProductName(String newProductName, int id) throws SQLException {
+        if (productRepository.doesExist(id)) {
+            int serverEcho = productRepository.updateProductName(newProductName, id);
+            if (serverEcho > 0)
+                System.out.println("Product name was changed successfully!");
+            else
+                System.out.println("OOPS! something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println("Invalid product id!");
+            return -1;
+        }
+    }
+
 
 }
