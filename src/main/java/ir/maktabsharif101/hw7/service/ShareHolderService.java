@@ -28,4 +28,18 @@ public class ShareHolderService {
         }
     }
 
+    public int updateShareHolderName(String newShareHolderName, int id) throws SQLException {
+        if (shareHolderRepository.doesExist(id)) {
+            int serverEcho = shareHolderRepository.updateShareHolderName(newShareHolderName, id);
+            if (serverEcho > 0)
+                System.out.println("Shareholder name was changed successfully!");
+            else
+                System.out.println("OOPS! Something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println("Invalid shareholder id!");
+            return -1;
+        }
+    }
+
 }
