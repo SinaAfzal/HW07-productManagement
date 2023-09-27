@@ -373,7 +373,11 @@ public class Menu {
         brandService.listAllBrands();
     }
 
-    public void deleteBrand() {
+    public void deleteBrand() throws SQLException {
+        System.out.print("Enter Brand ID: ");
+        int id = scanner.nextInt();
+
+        brandService.delete(id);
     }
 
 
