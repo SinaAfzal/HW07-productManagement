@@ -46,29 +46,30 @@ public class ProductService {
             return -1;
         }
     }
-    public int updateProductBrand(int productID,int newBrandID) throws SQLException {
-        if (productRepository.doesExist(productID)){
-            int serverEcho=productRepository.updateBrandId(newBrandID,productID);
-            if (serverEcho>0)
+
+    public int updateProductBrand(int productID, int newBrandID) throws SQLException {
+        if (productRepository.doesExist(productID)) {
+            int serverEcho = productRepository.updateBrandId(newBrandID, productID);
+            if (serverEcho > 0)
                 System.out.println("Product brand was changed successfully!");
             else
                 System.out.println("OOPS! Something went wrong!");
             return serverEcho;
-        }else {
+        } else {
             System.out.println("Invalid product id!");
             return -1;
         }
     }
 
-    public int updateProductCategory(int productID,int newCategoryID) throws SQLException {
-        if (productRepository.doesExist(productID)){
-            int serverEcho=productRepository.updateCategoryId(newCategoryID,productID);
-            if (serverEcho>0)
+    public int updateProductCategory(int productID, int newCategoryID) throws SQLException {
+        if (productRepository.doesExist(productID)) {
+            int serverEcho = productRepository.updateCategoryId(newCategoryID, productID);
+            if (serverEcho > 0)
                 System.out.println("Product category was changed successfully!");
             else
                 System.out.println("OOPS! Something went wrong!");
             return serverEcho;
-        }else {
+        } else {
             System.out.println("Invalid product id!");
             return -1;
         }
@@ -83,8 +84,8 @@ public class ProductService {
                 System.out.println("Product with ID=" + id + " is loaded successfully!:");
                 System.out.println("   -Product name: " + loadedProduct.getProductName());
                 System.out.println("   -Product creation date: " + loadedProduct.getCreateDate());
-                System.out.println("   -Product category ID: "+ loadedProduct.getCategoryId());
-                System.out.println("   -Product brand ID: "+loadedProduct.getBrandId());
+                System.out.println("   -Product category ID: " + loadedProduct.getCategoryId());
+                System.out.println("   -Product brand ID: " + loadedProduct.getBrandId());
             }
             return loadedProduct;
         } else {
@@ -111,7 +112,14 @@ public class ProductService {
         return products;
     }
 
-
+    public void delete(int id) throws SQLException {
+        if (productRepository.doesExist(id)) {
+            productRepository.delete(id);
+            System.out.println("Product was deleted!");
+        } else {
+            System.out.println("Invalid product ID!");
+        }
+    }
 
 
 }
