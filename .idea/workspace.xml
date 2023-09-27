@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add delete method to the ShareHolderRepository class">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add countShareHoldersOfBrand to the BrandRepository class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/CategoryRepository.java" afterDir="false" />
     </list>
@@ -72,7 +72,7 @@
       <workItem from="1695704154504" duration="17118000" />
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
-      <workItem from="1695791992794" duration="6605000" />
+      <workItem from="1695791992794" duration="7369000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config of the project">
       <created>1695651719238</created>
@@ -375,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695798101226</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add countShareHoldersOfBrand to the BrandRepository class">
+      <created>1695798654646</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1695798654646</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +400,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add doesExist method to CategoryRepository class" />
     <MESSAGE value="add updateCategoryName method to CategoryRepository class" />
     <MESSAGE value="add updateCategoryDescription method to CategoryRepository class" />
     <MESSAGE value="create BrandRepository class and add its connection" />
@@ -418,6 +424,7 @@
     <MESSAGE value="add 3 methods to the ShareHolderRepository class: countBrandOfShareHolder(int),loadShareHolder(int) and buyBrandShares(int,int)" />
     <MESSAGE value="add 2 methods to the ShareHolderRepository class: countAllShareHolders() and listAllShareHolders()" />
     <MESSAGE value="add delete method to the ShareHolderRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete method to the ShareHolderRepository class" />
+    <MESSAGE value="add countShareHoldersOfBrand to the BrandRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add countShareHoldersOfBrand to the BrandRepository class" />
   </component>
 </project>

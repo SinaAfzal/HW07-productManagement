@@ -58,13 +58,42 @@ public class BrandRepository {
         int result = preparedStatement.executeUpdate();
         return result;
     }
+
     public int countShareHoldersOfBrand(int id) throws SQLException {
-        String query="SELECT * FROM shareholder_brand WHERE brandid=?";
-        PreparedStatement preparedStatement=connection.prepareStatement(query);
-        preparedStatement.setInt(1,id);
-        ResultSet resultSet=preparedStatement.executeQuery();
+        String query = "SELECT * FROM shareholder_brand WHERE brandid=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
+        ResultSet resultSet = preparedStatement.executeQuery();
         resultSet.next();
         return resultSet.getInt(1);
+    }
+
+    public Brand load(int id) throws SQLException {
+        String query = "SELECT * FROM brand WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        Brand brand = new Brand();
+        while (resultSet.next()) {
+            brand.setId(resultSet.getInt(1));
+            brand.setBrandName(resultSet.getString(2));
+            brand.setWebsite(resultSet.getString(3));
+            brand.setDescription(resultSet.getString(4));
+        }
+        int NumberOfShareHolders = countShareHoldersOfBrand(id);
+        if (NumberOfShareHolders > 0) {
+            String queryFindShareHolders = "SELECT * FROM shareholder_brand WHERE brandid=?";
+            PreparedStatement preparedStatementFindShareHolders = connection.prepareStatement(queryFindShareHolders);
+            preparedStatementFindShareHolders.setInt(1, id);
+            ResultSet resultSetFoundShareholders = preparedStatementFindShareHolders.executeQuery();
+            int[] shareHolderIDs = new int[NumberOfShareHolders];
+            int counter = 0;
+            while (resultSetFoundShareholders.next()) {
+                shareHolderIDs[counter++] = resultSetFoundShareholders.getInt("shareholderid");
+            }
+            brand.setShareHolderIds(shareHolderIDs);
+        }
+        return brand;
     }
 
 }
