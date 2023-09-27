@@ -1,5 +1,6 @@
 package ir.maktabsharif101.hw7.service;
 
+import ir.maktabsharif101.hw7.entities.Brand;
 import ir.maktabsharif101.hw7.entities.Category;
 import ir.maktabsharif101.hw7.repository.CategoryRepository;
 
@@ -42,7 +43,7 @@ public class CategoryService {
         }
     }
 
-    public int updateCategoryDescription(String newCategoryDescription,int id) throws SQLException {
+    public int updateCategoryDescription(String newCategoryDescription, int id) throws SQLException {
         if (categoryRepository.doesExist(id)) {
             int serverEcho = categoryRepository.updateCategoryDescription(newCategoryDescription, id);
             if (serverEcho > 0)
@@ -53,6 +54,23 @@ public class CategoryService {
         } else {
             System.out.println("Category ID is not valid!");
             return -1;
+        }
+    }
+
+    public Category load(int id) throws SQLException {
+        if (categoryRepository.doesExist(id)) {
+            Category loadedCategory = categoryRepository.load(id);
+            if (loadedCategory == null)
+                System.out.println("OOPS! Category was found but could not be loaded!");
+            else {
+                System.out.println("Category with ID=" + id + " is loaded successfully!:");
+                System.out.println("   -Category name: " + loadedCategory.getCategoryName());
+                System.out.println("   -Category description: " + loadedCategory.getDescription());
+            }
+            return loadedCategory;
+        } else {
+            System.out.println("Invalid category id!");
+            return null;
         }
     }
 

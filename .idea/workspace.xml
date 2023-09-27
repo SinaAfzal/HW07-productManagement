@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="modify updateCategoryName method in CategoryRepository">
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add updateCategoryDescription method to CategoryService class">
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/CategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,21 +72,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="6207000" />
-    </task>
-    <task id="LOCAL-00021" summary="add updateCategoryDescription method to CategoryRepository class">
-      <created>1695714792569</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1695714792569</updated>
-    </task>
-    <task id="LOCAL-00022" summary="create BrandRepository class and add its connection">
-      <created>1695715084536</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1695715084536</updated>
+      <workItem from="1695811481322" duration="6630000" />
     </task>
     <task id="LOCAL-00023" summary="add save method to BrandRepository class">
       <created>1695715553774</created>
@@ -417,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695817661738</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="add updateCategoryName method to CategoryService class">
+      <created>1695817824911</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1695817824911</updated>
+    </task>
+    <task id="LOCAL-00071" summary="add updateCategoryDescription method to CategoryService class">
+      <created>1695817943921</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1695817943921</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add countShareHoldersOfBrand to the BrandRepository class" />
-    <MESSAGE value="add load method to the BrandRepository class" />
     <MESSAGE value="add countAllBrands method to the BrandRepository class" />
     <MESSAGE value="add listAllBrands method to the BrandRepository class" />
     <MESSAGE value="add delete method to the BrandRepository class" />
@@ -460,6 +458,8 @@
     <MESSAGE value="modify and overload doesExist method in CategoryRepository" />
     <MESSAGE value="add save method to CategoryService class" />
     <MESSAGE value="modify updateCategoryName method in CategoryRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify updateCategoryName method in CategoryRepository" />
+    <MESSAGE value="add updateCategoryName method to CategoryService class" />
+    <MESSAGE value="add updateCategoryDescription method to CategoryService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add updateCategoryDescription method to CategoryService class" />
   </component>
 </project>
