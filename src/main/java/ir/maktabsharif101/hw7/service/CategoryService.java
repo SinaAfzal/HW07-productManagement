@@ -42,5 +42,19 @@ public class CategoryService {
         }
     }
 
+    public int updateCategoryDescription(String newCategoryDescription,int id) throws SQLException {
+        if (categoryRepository.doesExist(id)) {
+            int serverEcho = categoryRepository.updateCategoryDescription(newCategoryDescription, id);
+            if (serverEcho > 0)
+                System.out.println("Category description is updated successfully!");
+            else
+                System.out.println("OOPS! something went wrong!");
+            return serverEcho;
+        } else {
+            System.out.println("Category ID is not valid!");
+            return -1;
+        }
+    }
+
 
 }
