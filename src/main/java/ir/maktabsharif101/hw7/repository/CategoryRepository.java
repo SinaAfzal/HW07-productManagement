@@ -49,5 +49,16 @@ public class CategoryRepository {
         return result;
     }
 
+    public int countAllCategories() throws SQLException {
+        String query="SELECT count(*) FROM category";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
+
+
+
 
 }
