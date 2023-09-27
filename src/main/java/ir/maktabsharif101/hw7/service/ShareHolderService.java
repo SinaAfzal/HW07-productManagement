@@ -85,7 +85,7 @@ public class ShareHolderService {
                 System.out.println("   -Shareholder's national code: " + loadedShareHolder.getNationalCode());
                 System.out.println("   -Shareholder's phone number: " + loadedShareHolder.getPhoneNumber());
                 System.out.println("   -Shareholder's brand IDs: ");
-                if (loadedShareHolder.getBrandIds().length > 0) {
+                if (loadedShareHolder.getBrandIds()!=null) {
                     for (int i = 0; i < loadedShareHolder.getBrandIds().length; i++) {
                         if (i != loadedShareHolder.getBrandIds().length - 1)
                             System.out.print(loadedShareHolder.getBrandIds()[i] + ",");

@@ -67,7 +67,7 @@ public class BrandService {
                 System.out.println("   -Brand website: " + loadedBrand.getWebsite());
                 System.out.println("   -Brand description: " + loadedBrand.getDescription());
                 System.out.println("   -Brand shareholders: ");
-                if (loadedBrand.getShareHolderIds().length > 0) {
+                if (loadedBrand.getShareHolderIds()!=null) {
                     for (int i = 0; i < loadedBrand.getShareHolderIds().length; i++) {
                         if (i != loadedBrand.getShareHolderIds().length - 1)
                             System.out.print(loadedBrand.getShareHolderIds()[i] + ",");
