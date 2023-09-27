@@ -75,4 +75,13 @@ public class ProductRepository {
         return product;
     }
 
+    public int countAllProducts() throws SQLException{
+        String query="SELECT count(*) FROM product";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
+
 }
