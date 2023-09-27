@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="create BrandService class and add its connections">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="add save method to BrandService class">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/BrandRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/service/BrandService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,14 +73,7 @@
       <workItem from="1695735450600" duration="2629000" />
       <workItem from="1695738828664" duration="2756000" />
       <workItem from="1695791992794" duration="11516000" />
-      <workItem from="1695811481322" duration="781000" />
-    </task>
-    <task id="LOCAL-00010" summary="create ApplicationContext class and make JDBCConnection fields static final">
-      <created>1695660465435</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1695660465435</updated>
+      <workItem from="1695811481322" duration="2167000" />
     </task>
     <task id="LOCAL-00011" summary="create UserRepository class and add it to ApplicationContext class">
       <created>1695660903803</created>
@@ -418,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695803175847</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="add save method to BrandService class">
+      <created>1695812291501</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1695812291501</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add updateBrandId method to ProductRepository class" />
     <MESSAGE value="create ShareHolderRepository class and add its connection" />
     <MESSAGE value="add save method to ShareHolderRepository class" />
     <MESSAGE value="add doesExist method to ShareHolderRepository class" />
@@ -461,6 +460,7 @@
     <MESSAGE value="add countAllProducts method to ProductRepository class" />
     <MESSAGE value="add listAllProducts method to ProductRepository class" />
     <MESSAGE value="create BrandService class and add its connections" />
-    <option name="LAST_COMMIT_MESSAGE" value="create BrandService class and add its connections" />
+    <MESSAGE value="add save method to BrandService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add save method to BrandService class" />
   </component>
 </project>

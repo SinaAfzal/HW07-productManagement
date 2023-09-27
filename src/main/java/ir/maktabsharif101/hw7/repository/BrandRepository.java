@@ -33,19 +33,26 @@ public class BrandRepository {
         return brand;
     }
 
-    public boolean doesExist(Brand brand) throws SQLException {
+    public boolean doesExist(String brandName) throws SQLException {
         String query = "SELECT brandname FROM brand WHERE brandname=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(1, brand.getBrandName());
+        preparedStatement.setString(1, brandName);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+    public boolean doesExist(int id) throws SQLException {
+        String query = "SELECT brandname FROM brand WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet.next();
     }
 
-    public int updateBrandName(String newBrandName, int id) throws SQLException {
-        String query = "UPDATE brand SET brandname=? WHERE id=?";
+    public int updateBrandName(String newBrandName, String oldBrandName) throws SQLException {
+        String query = "UPDATE brand SET brandname=? WHERE brandname=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, newBrandName);
-        preparedStatement.setInt(2, id);
+        preparedStatement.setString(2, oldBrandName);
         int result = preparedStatement.executeUpdate();
         return result;
     }

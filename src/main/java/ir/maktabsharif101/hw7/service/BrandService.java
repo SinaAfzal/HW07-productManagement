@@ -13,7 +13,7 @@ public class BrandService {
     }
 
     public Brand save(Brand brand) throws SQLException {
-        if (brandRepository.doesExist(brand)) {
+        if (brandRepository.doesExist(brand.getBrandName())) {
             System.out.println("The brand name already exists on the database!");
             return null;
         } else {
@@ -27,6 +27,9 @@ public class BrandService {
             }
         }
     }
+
+
+
 
 
 }
