@@ -24,10 +24,17 @@ public class ShareHolderRepository {
         return shareHolder;
     }
 
-    public boolean doesExist(ShareHolder shareHolder) throws SQLException {
+    public boolean doesExist(String nationalCode) throws SQLException {
         String query = "SELECT nationalcode FROM shareholder WHERE nationalcode=?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(1, shareHolder.getNationalCode());
+        preparedStatement.setString(1, nationalCode);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSet.next();
+    }
+    public boolean doesExist(int id) throws SQLException {
+        String query = "SELECT nationalcode FROM shareholder WHERE id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet.next();
     }
