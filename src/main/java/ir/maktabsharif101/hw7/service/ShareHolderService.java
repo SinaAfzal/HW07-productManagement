@@ -154,4 +154,13 @@ public class ShareHolderService {
         return shareHolders;
     }
 
+    public void delete(int id) throws SQLException {
+        if (shareHolderRepository.doesExist(id)) {
+            shareHolderRepository.delete(id);
+            System.out.println("Shareholder was deleted!");
+        } else {
+            System.out.println("Invalid shareholder ID!");
+        }
+    }
+
 }
