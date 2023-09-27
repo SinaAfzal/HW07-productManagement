@@ -84,9 +84,9 @@ public class ShareHolderRepository {
             preparedStatementRelatedBrandFinder.setInt(1, id);
             ResultSet resultSetFoundRelatedBrands = preparedStatementRelatedBrandFinder.executeQuery();
             int[] brandIDs = new int[numberOfFoundBrands];
-            int counter=0;
+            int counter = 0;
             while (resultSetFoundRelatedBrands.next()) {
-                brandIDs[counter++]=resultSet.getInt("brandid");
+                brandIDs[counter++] = resultSet.getInt("brandid");
             }
             shareHolder.setBrandIds(brandIDs);
         }
@@ -99,6 +99,24 @@ public class ShareHolderRepository {
         preparedStatement.setInt(1, brandId);
         preparedStatement.setInt(2, shareholderId);
         return preparedStatement.executeUpdate();
+    }
+    public int countAllShareHolders() throws SQLException {
+        String query="SELECT count(*) FROM shareholder";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+    public ShareHolder[] listAllShareHolders() throws SQLException{
+        String query="SELECT id FROM shareholder";
+        PreparedStatement preparedStatement=connection.prepareStatement(query);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        ShareHolder[] shareHolders=new ShareHolder[countAllShareHolders()];
+        int counter=0;
+        while (resultSet.next()){
+            shareHolders[counter++]=loadShareHolder(resultSet.getInt(1));
+        }
+        return shareHolders;
     }
 
 }
