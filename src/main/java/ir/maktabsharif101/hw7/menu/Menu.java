@@ -625,7 +625,11 @@ public class Menu {
         productService.listAllProducts();
     }
 
-    public void deleteProduct() {
+    public void deleteProduct() throws SQLException {
+        System.out.print("Enter Product's ID: ");
+        int id = scanner.nextInt();
+
+        productService.delete(id);
     }
 
 }
