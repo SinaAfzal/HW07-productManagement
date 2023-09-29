@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="change menu title in shareholderMenu method">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ShareHolderRepository.java" afterDir="false" />
+    <list default="true" id="44b9cb50-6ace-49cc-b0b2-dd50f42999b0" name="Changes" comment="minor bug fix in loadshareholder methods">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,30 +32,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last.edited.regexp": "s.afzalsoltani@gmail.com",
-    "last_opened_file_path": "C:/Users/Sina/IdeaProjects/Sina_Afzalsoltani_HW07_Maktab101",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last.edited.regexp&quot;: &quot;s.afzalsoltani@gmail.com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sina/IdeaProjects/Sina_Afzalsoltani_HW07_Maktab101&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "afa740a8-79a2-4c05-a867-32ebc6613b65/database/\"postgres\"/schema/\"hw7\"",
-      "b53fac7c-4eb9-4342-bff7-d6e1db21ec15/database/\"postgres\"/schema/\"hw7\"",
-      "fa851cc0-b9d5-4544-b949-210437d60dc3",
-      "fa851cc0-b9d5-4544-b949-210437d60dc3/database/\"postgres\""
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;afa740a8-79a2-4c05-a867-32ebc6613b65/database/\&quot;postgres\&quot;/schema/\&quot;hw7\&quot;&quot;,
+      &quot;b53fac7c-4eb9-4342-bff7-d6e1db21ec15/database/\&quot;postgres\&quot;/schema/\&quot;hw7\&quot;&quot;,
+      &quot;fa851cc0-b9d5-4544-b949-210437d60dc3&quot;,
+      &quot;fa851cc0-b9d5-4544-b949-210437d60dc3/database/\&quot;postgres\&quot;&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SQL.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/sql/SQL.sql" />
@@ -79,14 +80,8 @@
       <workItem from="1695811481322" duration="16056000" />
       <workItem from="1695832469880" duration="18227000" />
       <workItem from="1695850864616" duration="1631000" />
-      <workItem from="1695852534956" duration="6182000" />
-    </task>
-    <task id="LOCAL-00108" summary="add isWebsiteValid method to Validation class">
-      <created>1695837295855</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1695837295855</updated>
+      <workItem from="1695852534956" duration="6741000" />
+      <workItem from="1695874410648" duration="3542000" />
     </task>
     <task id="LOCAL-00109" summary="add isPhoneNumberValid method to Validation class">
       <created>1695837686940</created>
@@ -424,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695858517662</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="minor bug fix in loadshareholder methods">
+      <created>1695858940076</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1695858940076</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add listAllBrands method to Menu class" />
     <MESSAGE value="add deleteBrand method to Menu class" />
     <MESSAGE value="add shareHolderMenu method to Menu class" />
     <MESSAGE value="add createShareHolder method to Menu class" />
@@ -467,7 +468,8 @@
     <MESSAGE value="call menu" />
     <MESSAGE value="add getter to MENU" />
     <MESSAGE value="change menu title in shareholderMenu method" />
-    <option name="LAST_COMMIT_MESSAGE" value="change menu title in shareholderMenu method" />
+    <MESSAGE value="minor bug fix in loadshareholder methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor bug fix in loadshareholder methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -486,6 +488,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java</url>
           <line>50</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/ProductRepository.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/ir/maktabsharif101/hw7/repository/UserRepository.java</url>
